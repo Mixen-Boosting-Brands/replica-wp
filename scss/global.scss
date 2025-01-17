@@ -548,6 +548,10 @@ header {
     }
 }
 
+#single {
+    padding-top: 60px;
+}
+
 footer {
     @include background("../images/bg-generico.png", center, cover);
     @include font-size(1.2rem);
