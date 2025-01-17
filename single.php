@@ -4,7 +4,7 @@
     while (have_posts()):
         the_post(); ?>
 
-    <section id="post">
+    <section id="single">
         <div class="container">
             <div class="row">
                 <div class="col-12">
