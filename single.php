@@ -14,24 +14,32 @@
                         </h1>
 
                         <!-- post details -->
-             			<span class="date">
-                				<time datetime="<?php the_time("Y-m-d"); ?> <?php the_time(
-     "H:i"
- ); ?>">
-               					<?php the_date(); ?> <?php the_time(); ?>
-                				</time>
-             			</span>
-             			<span class="author"><?php esc_html_e(
-                    "Published by",
-                    "html5blank"
-                ); ?> <?php the_author_posts_link(); ?></span>
-             			<span class="comments"><?php if (comments_open(get_the_ID())) {
-                    comments_popup_link(
-                        __("Leave your thoughts", "html5blank"),
-                        __("1 Comment", "html5blank"),
-                        __("% Comments", "html5blank")
-                    );
-                } ?></span>
+                        <ul class="list-inline">
+                            <li>
+                                <time datetime="<?php the_time(
+                                    "Y-m-d"
+                                ); ?> <?php the_time("H:i"); ?>">
+                           					<?php the_date(); ?> <?php the_time(); ?>
+                            				</time>
+                            </li>
+                            <li>
+                                <span class="author"><?php esc_html_e(
+                                    "Published by",
+                                    "html5blank"
+                                ); ?> <?php the_author_posts_link(); ?></span>
+                            </li>
+                            <li>
+                                <span class="comments"><?php if (
+                                    comments_open(get_the_ID())
+                                ) {
+                                    comments_popup_link(
+                                        __("Leave your thoughts", "html5blank"),
+                                        __("1 Comment", "html5blank"),
+                                        __("% Comments", "html5blank")
+                                    );
+                                } ?></span>
+                            </li>
+                        </ul>
              			<!-- /post details -->
 
                         <?php the_content();
