@@ -90,7 +90,7 @@
                 <p class="mb-0">
                     © <?php echo esc_html(date("Y")); ?> <?php bloginfo(
      "name"
- ); ?>. Todos los derechos reservados. Hecho
+ ); ?>. Todos los derechos reservados.<br>Hecho
                     con <i class="fa-solid fa-heart"></i> por
                     <a href="https://mixen.mx/" target="_blank">Mixen</a
                     >.
