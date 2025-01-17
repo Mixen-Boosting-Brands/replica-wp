@@ -1,0 +1,16 @@
+// Fonts
+$fa-font-path: "../fonts/webfonts" !default;
+
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands";
+
+@font-face {
+    font-family: "circular_stdbook";
+    src:
+        url("../fonts/circularstd-book-webfont.woff2") format("woff2"),
+        url("../fonts/circularstd-book-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}

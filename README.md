@@ -1,1 +1,3 @@
-# replica-wp
+# Réplica
+
+&copy; 2024 Mixen: Boosting Brands

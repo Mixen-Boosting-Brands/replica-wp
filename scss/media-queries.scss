@@ -1,0 +1,219 @@
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) {
+    .equipo {
+        .thumb-equipo {
+            &::before {
+                left: -22px;
+                width: 112px;
+                height: 200px;
+            }
+
+            &::after {
+                bottom: 0;
+                width: 368px;
+                height: 90px;
+            }
+        }
+    }
+
+    footer {
+        .logo {
+            max-width: 50%;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+    .equipo {
+        .thumb-equipo {
+            &::before {
+                left: -22px;
+                width: 112px;
+                height: 200px;
+            }
+
+            &::after {
+                bottom: 0;
+                width: 560px;
+                height: 137px;
+            }
+        }
+    }
+
+    footer {
+        .logo {
+            max-width: 100%;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+    header {
+        nav {
+            right: -42px;
+
+            a {
+                padding: 12px 14px;
+            }
+        }
+
+        .list-inline-item:last-child {
+            a {
+                padding: 12px 40px 12px 20px;
+            }
+        }
+
+        .list-inline-item:not(:last-child) {
+            margin-right: 0.8rem;
+        }
+    }
+
+    #jumbotron {
+        h1 {
+            line-height: 3.2rem;
+        }
+    }
+
+    #clientes {
+        &::before {
+            top: -89px;
+        }
+    }
+
+    .equipo {
+        .thumb-equipo {
+            &::before {
+                left: -22px;
+                width: 42px;
+                height: 75px;
+            }
+
+            &::after {
+                bottom: 0;
+                width: 150px;
+                height: 37px;
+            }
+        }
+    }
+
+    #equipo-1,
+    #equipo-2 {
+        .decor {
+            display: block;
+            position: absolute;
+            @include absolute-center-y;
+        }
+    }
+
+    #equipo-1 {
+        .decor {
+            @include background(
+                "../images/decor-equipo-1.png",
+                center,
+                contain
+            );
+            width: 552px;
+            height: 582px;
+            right: -228px;
+        }
+    }
+
+    #equipo-2 {
+        .decor {
+            @include background(
+                "../images/decor-equipo-2.png",
+                center,
+                contain
+            );
+            width: 625px;
+            height: 448px;
+            left: -400px;
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) {
+    header {
+        nav {
+            right: -42px;
+
+            a {
+                padding: 12px 20px;
+            }
+        }
+
+        .list-inline-item:last-child {
+            a {
+                padding: 12px 40px 12px 20px;
+            }
+        }
+
+        .list-inline-item:not(:last-child) {
+            margin-right: 1.8rem;
+        }
+    }
+
+    #clientes {
+        text-align: center;
+
+        &::before {
+            top: -96px;
+        }
+    }
+
+    .equipo {
+        .thumb-equipo {
+            &::before {
+                left: -74px;
+                width: 64px;
+                height: 114px;
+            }
+
+            &::after {
+                bottom: 0;
+                width: 180px;
+                height: 45px;
+            }
+        }
+    }
+
+    #equipo-1 {
+        .decor {
+            width: 552px;
+            height: 582px;
+            right: -160px;
+        }
+    }
+
+    #equipo-2 {
+        .decor {
+            width: 625px;
+            height: 448px;
+            left: -334;
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@include media-breakpoint-up(xxl) {
+    .equipo {
+        .thumb-equipo {
+            &::before {
+                left: -102px;
+                width: 80px;
+                height: 142px;
+            }
+
+            &::after {
+                bottom: 0;
+                width: 232px;
+                height: 56px;
+            }
+        }
+    }
+}
