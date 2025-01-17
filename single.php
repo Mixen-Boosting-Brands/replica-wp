@@ -15,20 +15,20 @@
 
                         <!-- post details -->
                         <ul class="list-inline">
-                            <li>
+                            <li class="list-inline-item">
                                 <time datetime="<?php the_time(
                                     "Y-m-d"
                                 ); ?> <?php the_time("H:i"); ?>">
                            					<?php the_date(); ?> <?php the_time(); ?>
                             				</time>
                             </li>
-                            <li>
+                            <li class="list-inline-item">
                                 <span class="author"><?php esc_html_e(
-                                    "Published by",
+                                    "Por",
                                     "html5blank"
                                 ); ?> <?php the_author_posts_link(); ?></span>
                             </li>
-                            <li>
+                            <li class="list-inline-item">
                                 <span class="comments"><?php if (
                                     comments_open(get_the_ID())
                                 ) {
