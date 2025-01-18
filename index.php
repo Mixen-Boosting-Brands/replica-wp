@@ -1497,7 +1497,7 @@
                         <?php
                         else:
                              ?>
-                            <p>No posts found in the Blog category.</p>
+                            <div class="swiper-slide text-center">No se encontraron posts.</div>
                         <?php
                         endif;
                         ?>
