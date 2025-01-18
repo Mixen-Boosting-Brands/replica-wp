@@ -1473,10 +1473,6 @@
                                             <?php the_post_thumbnail("full", [
                                                 "class" => "card-img-top",
                                             ]); ?>
-                                        <?php else: ?>
-                                            <img src="<?php echo esc_url(
-                                                get_template_directory_uri()
-                                            ); ?>/assets/images/blog/1.png" class="card-img-top" alt="<?php the_title_attribute(); ?>">
                                         <?php endif; ?>
                                     </a>
                                     <div class="card-body">
