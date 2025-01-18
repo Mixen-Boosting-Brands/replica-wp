@@ -1452,113 +1452,55 @@
                 >
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                        <!-- Slide 1 -->
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <a href="#">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/blog/1.png" class="card-img-top" alt="...">
-                                </a>
-                                <div class="card-body">
-                                    <a href="#">
-                                        <h3 class="card-title">Título del post</h3>
-                                    </a>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
-                                    <a href="#" class="btn btn-primary btn-lg rounded-pill">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                        $args = [
+                            "category_name" => "blog",
+                            "post_type" => "post",
+                            "posts_per_page" => -1,
+                        ];
 
-                        <!-- Slide 2 -->
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <a href="#">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/blog/1.png" class="card-img-top" alt="...">
-                                </a>
-                                <div class="card-body">
-                                    <a href="#">
-                                        <h3 class="card-title">Título del post</h3>
-                                    </a>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
-                                    <a href="#" class="btn btn-primary btn-lg rounded-pill">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
+                        $blog_query = new WP_Query($args);
 
-                        <!-- Slide 3 -->
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <a href="#">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/blog/1.png" class="card-img-top" alt="...">
-                                </a>
-                                <div class="card-body">
-                                    <a href="#">
-                                        <h3 class="card-title">Título del post</h3>
-                                    </a>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
-                                    <a href="#" class="btn btn-primary btn-lg rounded-pill">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
+                        if ($blog_query->have_posts()):
+                            while ($blog_query->have_posts()):
+                                $blog_query->the_post(); ?>
 
-                        <!-- Slide 4 -->
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <a href="#">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/blog/1.png" class="card-img-top" alt="...">
-                                </a>
-                                <div class="card-body">
-                                    <a href="#">
-                                        <h3 class="card-title">Título del post</h3>
+                        <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <a href="<?php the_permalink(); ?>">
+                                        <?php if (has_post_thumbnail()): ?>
+                                            <?php the_post_thumbnail("full", [
+                                                "class" => "card-img-top",
+                                            ]); ?>
+                                        <?php else: ?>
+                                            <img src="<?php echo esc_url(
+                                                get_template_directory_uri()
+                                            ); ?>/assets/images/blog/1.png" class="card-img-top" alt="<?php the_title_attribute(); ?>">
+                                        <?php endif; ?>
                                     </a>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
-                                    <a href="#" class="btn btn-primary btn-lg rounded-pill">Leer más</a>
+                                    <div class="card-body">
+                                        <a href="<?php the_permalink(); ?>">
+                                            <h3 class="card-title"><?php the_title(); ?></h3>
+                                        </a>
+                                        <p class="card-text"><?php echo get_the_excerpt(); ?></p>
+                                        <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-lg rounded-pill">Leer más</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Slide 5 -->
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <a href="#">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/blog/1.png" class="card-img-top" alt="...">
-                                </a>
-                                <div class="card-body">
-                                    <a href="#">
-                                        <h3 class="card-title">Título del post</h3>
-                                    </a>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
-                                    <a href="#" class="btn btn-primary btn-lg rounded-pill">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide 6 -->
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <a href="#">
-                                    <img src="<?php echo esc_url(
-                                        get_template_directory_uri()
-                                    ); ?>/assets/images/blog/1.png" class="card-img-top" alt="...">
-                                </a>
-                                <div class="card-body">
-                                    <a href="#">
-                                        <h3 class="card-title">Título del post</h3>
-                                    </a>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut magnam perferendis mollitia dolores odit distinctio ea a corporis? Fuga accusantium eius ad? Ipsa non doloremque quas provident, eum error!</p>
-                                    <a href="#" class="btn btn-primary btn-lg rounded-pill">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                            endwhile; ?>
+                        <?php wp_reset_postdata();
+                            // Reset post data
+                            ?>
+                        <?php
+                        else:
+                             ?>
+                            <p>No posts found in the Blog category.</p>
+                        <?php
+                        endif;
+                        ?>
                     </div>
 
                     <!-- If we need navigation buttons -->
