@@ -1456,7 +1456,7 @@
                         $args = [
                             "category_name" => "blog",
                             "post_type" => "post",
-                            "posts_per_page" => -1,
+                            "posts_per_page" => 10,
                         ];
 
                         $blog_query = new WP_Query($args);
@@ -1508,7 +1508,9 @@
         <div class="row">
             <div class="text-center">
                 <a
-                    href="#"
+                    href="<?php echo esc_url(
+                        get_category_link(get_cat_ID("blog"))
+                    ); ?>"
                     class="btn btn-lg btn-outline-light rounded-pill"
                     data-aos="fade-up"
                     data-aos-duration="1000"
