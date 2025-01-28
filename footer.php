@@ -49,12 +49,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 text-md-end">
-                <div class="row">
-                    <div class="col">
-                         <h1>Teléfonos</h1>
-                    </div>
-                </div>
+            <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-6">
                         <h1>Teléfonos</h1>
@@ -92,7 +87,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col text-end">
+            <div class="col text-center">
                 <ul class="social list-inline mb-5">
                     <li class="list-inline-item">
                         <a href="https://facebook.com/" target="_blank"">
