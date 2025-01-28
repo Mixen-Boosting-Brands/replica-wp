@@ -1479,7 +1479,7 @@
                                         <a href="<?php the_permalink(); ?>">
                                             <h3 class="card-title"><?php the_title(); ?></h3>
                                         </a>
-                                        <p class="card-text"><?php echo get_the_excerpt(); ?></p>
+                                        <!-- p class="card-text">< get_the_excerpt(); ></p -->
                                         <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-lg rounded-pill">Leer más</a>
                                     </div>
                                 </div>
