@@ -1430,7 +1430,7 @@
     </div>
 </section>
 
-<section id="blog" class="text-white py-60">
+<section id="blog" class="text-white">
     <div class="container-fluid">
         <div class="row mb-4">
             <div class="col text-center">
