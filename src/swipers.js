@@ -170,20 +170,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
         breakpoints: {
             576: {
-                slidesPerView: 1,
-                spaceBetween: 40,
-            },
-            768: {
                 slidesPerView: 2,
                 spaceBetween: 40,
             },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
             992: {
-                slidesPerView: 2.5,
+                slidesPerView: 4,
                 spaceBetween: 40,
                 centeredSlides: true,
             },
         },
 
+        /*
         on: {
             init: function () {
                 if (this.params.slidesPerView === 3) {
@@ -221,6 +222,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             },
         },
+         */
 
         // if we need navigation
         navigation: {
