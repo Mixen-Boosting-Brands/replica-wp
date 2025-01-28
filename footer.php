@@ -16,56 +16,83 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3">
-                <h1>Ubicación</h1>
-                <ul class="list-unstyled mb-5 mb-md-0">
-                    <li>
-                        <address>
-                            Hacienda del Carrizal 3204<br />
-                            Las Haciendas<br />
-                            C.P. 31215<br />
-                            Chihuahua, Chih., México
-                        </address>
-                    </li>
-                    <li>
-                        <address>
-                            1401 S Street NW<br />
-                            Unit 411<br />
-                            Washington, D.C., EUA<br />
-                            20009
-                        </address>
-                    </li>
-                </ul>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col">
+                        <h1>Ubicación</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled mb-5">
+                            <li>
+                                <address>
+                                    Hacienda del Carrizal 3204<br />
+                                    Las Haciendas<br />
+                                    C.P. 31215<br />
+                                    Chihuahua, Chih., México
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled mb-5">
+                            <li>
+                                <address>
+                                    1401 S Street NW<br />
+                                    Unit 411<br />
+                                    Washington, D.C., EUA<br />
+                                    20009
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 offset-md-5 text-md-end">
-                <h1>Teléfonos</h1>
-                <ul class="list-unstyled mb-5">
-                    <li>
-                        México:
-                        <a href="tel:+526144273410"
-                            >+52 614 427 3410 (con WhatsApp)</a
-                        >
-                    </li>
-                    <li>
-                        EUA:
-                        <a href="tel:+18728997407"
-                            >+1 872 899 7407 (con mensajes de texto)</a
-                        >
-                    </li>
-                </ul>
-                <h1>Correos</h1>
-                <ul class="list-unstyled mb-5">
-                    <li>
-                        <a href="mailto:natalia@replicalt.com"
-                            >natalia@replicalt.com</a
-                        >
-                    </li>
-                    <li>
-                        <a href="mailto:carlos@replicalt.com"
-                            >carlos@replicalt.com</a
-                        >
-                    </li>
-                </ul>
+            <div class="col-md-6 text-md-end">
+                <div class="row">
+                    <div class="col">
+                         <h1>Teléfonos</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Teléfonos</h1>
+                        <ul class="list-unstyled mb-5">
+                            <li>
+                                México:
+                                <a href="tel:+526144273410"
+                                    >+52 614 427 3410 (con WhatsApp)</a
+                                >
+                            </li>
+                            <li>
+                                EUA:
+                                <a href="tel:+18728997407"
+                                    >+1 872 899 7407 (con mensajes de texto)</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h1>Correos</h1>
+                        <ul class="list-unstyled mb-5">
+                            <li>
+                                <a href="mailto:natalia@replicalt.com"
+                                    >natalia@replicalt.com</a
+                                >
+                            </li>
+                            <li>
+                                <a href="mailto:carlos@replicalt.com"
+                                    >carlos@replicalt.com</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-end">
                 <ul class="social list-inline mb-5">
                     <li class="list-inline-item">
                         <a href="https://facebook.com/" target="_blank"">
