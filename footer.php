@@ -61,7 +61,7 @@
                                 >
                             </li>
                             <li>
-                                EUA:
+                                EE.UU.:
                                 <a href="tel:+18728997407"
                                     >+1 872 899 7407 (con mensajes de texto)</a
                                 >
