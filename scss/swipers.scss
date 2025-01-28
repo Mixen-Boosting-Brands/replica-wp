@@ -122,9 +122,11 @@
         }
     }
 
+    /*
     .active {
-        transform: scale(1); /* Scaled up size for center slide */
+        transform: scale(1);  // Scaled up size for center slide
     }
+    */
 
     .card {
         background-color: $white;
@@ -170,20 +172,22 @@
         }
     }
 
+    /*
     #blog {
         .swiper-slide {
             opacity: 0.6;
         }
 
         .swiper-slide.swiper-slide-active {
-            transform: scale(1); /* Make active slide full size */
-            opacity: 1; /* Make active slide fully visible */
+            transform: scale(1); // Make active slide full size
+            opacity: 1; // Make active slide fully visible
         }
 
         .active {
             opacity: 1;
         }
     }
+    */
 }
 
 @include media-breakpoint-up(xl) {
