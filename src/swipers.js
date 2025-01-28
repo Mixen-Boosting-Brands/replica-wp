@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
             992: {
                 slidesPerView: 4,
                 spaceBetween: 40,
-                centeredSlides: true,
+                centeredSlides: false,
             },
         },
 
