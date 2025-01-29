@@ -1431,7 +1431,7 @@
 </section>
 
 <section id="blog" class="text-white">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row mb-4">
             <div class="col text-center">
                 <h1 data-aos="fade-up"
