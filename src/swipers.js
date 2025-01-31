@@ -184,7 +184,6 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         },
 
-        /*
         on: {
             init: function () {
                 if (this.params.slidesPerView === 3) {
@@ -222,7 +221,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             },
         },
-         */
 
         // if we need navigation
         navigation: {
