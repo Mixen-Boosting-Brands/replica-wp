@@ -268,7 +268,7 @@ header {
     padding: 120px 0;
 
     .impuestos {
-        white-space: nowrap;
+        white-space: nowrap !important;
 
         span {
             color: $info;
