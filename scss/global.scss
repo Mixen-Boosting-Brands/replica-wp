@@ -267,9 +267,11 @@ header {
 #descanso {
     padding: 120px 0;
 
-    .impuestos {
+    h1 {
         white-space: nowrap !important;
+    }
 
+    .impuestos {
         span {
             color: $info;
             font-weight: bold;
