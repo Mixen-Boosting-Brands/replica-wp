@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         direction: "horizontal",
         allowTouchMove: true,
-        spaceBetween: 40,
+        spaceBetween: 30,
         loop: false,
         grabCursor: true,
         keyboard: {
