@@ -1,19 +1,21 @@
 <?php get_header(); ?>
 
-	<main role="main" aria-label="Content">
-		<!-- section -->
-		<section>
-
-			<h1><?php esc_html_e( 'Category: ', 'html5blank' ); single_cat_title(); ?></h1>
-
-			<?php get_template_part( 'loop' ); ?>
-
-			<?php get_template_part( 'pagination' ); ?>
-
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
+<section id="interna">
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h1>
+                    <span class="fw-bold"><?php single_cat_title(); ?></span>
+                </h1>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <?php get_template_part("loop"); ?>
+        </div>
+        <div class="row text-center">
+            <?php echo bootstrap_pagination(); ?>
+        </div>
+    </div>
+</section>
 
 <?php get_footer(); ?>
