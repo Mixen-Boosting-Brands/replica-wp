@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="interna">
+<section id="category">
     <div class="container">
         <div class="row mb-4">
             <div class="col text-center">
