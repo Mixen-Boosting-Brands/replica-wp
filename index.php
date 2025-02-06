@@ -284,7 +284,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="row">
-                    <div class="col-lg-3 my-auto">
+                    <div class="col-lg-3 offset-lg-1 my-auto">
                         <div class="thumb-equipo" data-aos="fade-up"
                         data-aos-duration="1000"
                         data-aos-delay="100">
@@ -297,7 +297,7 @@
                             />
                         </div>
                     </div>
-                    <div class="col-lg-9 my-auto text-justify">
+                    <div class="col-lg-8 my-auto text-justify">
                         <p data-aos="fade-up"
                         data-aos-duration="1000"
                         data-aos-delay="200">
