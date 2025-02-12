@@ -7,7 +7,7 @@
                         src="<?php echo esc_url(
                             get_template_directory_uri()
                         ); ?>/assets/images/logo@2x.png"
-                        alt=""
+                        alt="<?php esc_attr_e("Logo Replica", "replica"); ?>"
                         class="logo img-fluid mb-5" data-aos="fade-up"
                         data-aos-duration="1000"
                         data-aos-delay="0"
@@ -19,7 +19,7 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col">
-                        <h1>Ubicación</h1>
+                        <h1><?php _e("Ubicación", "replica"); ?></h1>
                     </div>
                 </div>
                 <div class="row">
@@ -27,10 +27,19 @@
                         <ul class="list-unstyled mb-5">
                             <li>
                                 <address>
-                                    Hacienda del Carrizal 3204<br />
-                                    Las Haciendas<br />
-                                    C.P. 31215<br />
-                                    Chihuahua, Chih., México
+                                    <?php _e(
+                                        "Hacienda del Carrizal 3204",
+                                        "replica"
+                                    ); ?><br />
+                                    <?php _e(
+                                        "Las Haciendas",
+                                        "replica"
+                                    ); ?><br />
+                                    <?php _e("C.P. 31215", "replica"); ?><br />
+                                    <?php _e(
+                                        "Chihuahua, Chih., México",
+                                        "replica"
+                                    ); ?>
                                 </address>
                             </li>
                         </ul>
@@ -39,10 +48,16 @@
                         <ul class="list-unstyled mb-5">
                             <li>
                                 <address>
-                                    1401 S Street NW<br />
-                                    Unit 411<br />
-                                    Washington, D.C., EUA<br />
-                                    20009
+                                    <?php _e(
+                                        "1401 S Street NW",
+                                        "replica"
+                                    ); ?><br />
+                                    <?php _e("Unit 411", "replica"); ?><br />
+                                    <?php _e(
+                                        "Washington, D.C., EUA",
+                                        "replica"
+                                    ); ?><br />
+                                    <?php _e("20009", "replica"); ?>
                                 </address>
                             </li>
                         </ul>
@@ -52,34 +67,36 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1>Teléfonos</h1>
+                        <h1><?php _e("Teléfonos", "replica"); ?></h1>
                         <ul class="list-unstyled mb-5">
                             <li>
-                                México:
-                                <a href="tel:+526144273410"
-                                    >+52 614 427 3410 (con WhatsApp)</a
-                                >
+                                <?php _e("México:", "replica"); ?>
+                                <a href="tel:+526144273410">
+                                    <?php _e(
+                                        "+52 614 427 3410 (con WhatsApp)",
+                                        "replica"
+                                    ); ?>
+                                </a>
                             </li>
                             <li>
-                                EE.UU.:
-                                <a href="tel:+18728997407"
-                                    >+1 872 899 7407 (con mensajes de texto)</a
-                                >
+                                <?php _e("EE.UU.:", "replica"); ?>
+                                <a href="tel:+18728997407">
+                                    <?php _e(
+                                        "+1 872 899 7407 (con mensajes de texto)",
+                                        "replica"
+                                    ); ?>
+                                </a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <h1>Correos</h1>
+                        <h1><?php _e("Correos", "replica"); ?></h1>
                         <ul class="list-unstyled mb-5">
                             <li>
-                                <a href="mailto:natalia@replicalt.com"
-                                    >natalia@replicalt.com</a
-                                >
+                                <a href="mailto:natalia@replicalt.com">natalia@replicalt.com</a>
                             </li>
                             <li>
-                                <a href="mailto:carlos@replicalt.com"
-                                    >carlos@replicalt.com</a
-                                >
+                                <a href="mailto:carlos@replicalt.com">carlos@replicalt.com</a>
                             </li>
                         </ul>
                     </div>
@@ -90,17 +107,26 @@
             <div class="col text-center">
                 <ul class="social list-inline mb-5">
                     <li class="list-inline-item">
-                        <a href="https://facebook.com/" target="_blank"">
+                        <a href="https://facebook.com/" target="_blank" aria-label="<?php esc_attr_e(
+                            "Facebook",
+                            "replica"
+                        ); ?>">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="https://instagram.com/" target="_blank"">
+                        <a href="https://instagram.com/" target="_blank" aria-label="<?php esc_attr_e(
+                            "Instagram",
+                            "replica"
+                        ); ?>">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="https://linkedin.com/" target="_blank"">
+                        <a href="https://linkedin.com/" target="_blank" aria-label="<?php esc_attr_e(
+                            "LinkedIn",
+                            "replica"
+                        ); ?>">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
                     </li>
@@ -112,10 +138,19 @@
                 <p class="mb-0">
                     © <?php echo esc_html(date("Y")); ?> <?php bloginfo(
      "name"
- ); ?>. Todos los derechos reservados.<br>Hecho
-                    con <i class="fa-solid fa-heart"></i> por
-                    <a href="https://mixen.mx/" target="_blank">Mixen</a
-                    >.
+ ); ?>.
+                    <?php _e(
+                        "Todos los derechos reservados.",
+                        "replica"
+                    ); ?><br>
+                    <?php _e(
+                        "Hecho con",
+                        "replica"
+                    ); ?> <i class="fa-solid fa-heart"></i> <?php _e(
+     "por",
+     "replica"
+ ); ?>
+                    <a href="https://mixen.mx/" target="_blank">Mixen</a>.
                 </p>
             </div>
         </div>

@@ -7,19 +7,26 @@
                 <h1 class="mb-4" data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="0">
-                    Por abogados,<br /><span>para abogados.</span>
+                    <?php _e("Por abogados,", "replica"); ?><br />
+                    <span><?php _e("para abogados.", "replica"); ?></span>
                 </h1>
                 <p data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="100">
-                    Traducción de documentos legales inglés-español,
-                    realizada por expertos en derecho y lingüística.
+                    <?php _e(
+                        "Traducción de documentos legales inglés-español,",
+                        "replica"
+                    ); ?>
+                    <?php _e(
+                        "realizada por expertos en derecho y lingüística.",
+                        "replica"
+                    ); ?>
                 </p>
                 <a href="#nosotros" class="btn btn-primary btn-lg rounded-pill" data-aos="fade-up"
                 data-aos-duration="1000"
-                data-aos-delay="200"
-                    >Sobre nosotros</a
-                >
+                data-aos-delay="200">
+                    <?php _e("Sobre nosotros", "replica"); ?>
+                </a>
             </div>
             <div class="col-xl-8 position-relative">
                 <img
@@ -38,160 +45,80 @@
     </div>
 </section>
 
-<section id="clientes" class="text-white py-60">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <!-- Slider main container -->
-                <div class="swiper swiper-clientes" data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="0">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img
-                                src="<?php echo esc_url(
-                                    get_template_directory_uri()
-                                ); ?>/assets/images/clientes/1.png"
-                                alt=""
-                                class="img-fluid"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="<?php echo esc_url(
-                                    get_template_directory_uri()
-                                ); ?>/assets/images/clientes/2.png"
-                                alt=""
-                                class="img-fluid"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="<?php echo esc_url(
-                                    get_template_directory_uri()
-                                ); ?>/assets/images/clientes/3.png"
-                                alt=""
-                                class="img-fluid"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="<?php echo esc_url(
-                                    get_template_directory_uri()
-                                ); ?>/assets/images/clientes/4.png"
-                                alt=""
-                                class="img-fluid"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="<?php echo esc_url(
-                                    get_template_directory_uri()
-                                ); ?>/assets/images/clientes/5.png"
-                                alt=""
-                                class="img-fluid"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="<?php echo esc_url(
-                                    get_template_directory_uri()
-                                ); ?>/assets/images/clientes/6.png"
-                                alt=""
-                                class="img-fluid"
-                            />
-                        </div>
-                        <div class="swiper-slide">
-                            <img
-                                src="<?php echo esc_url(
-                                    get_template_directory_uri()
-                                ); ?>/assets/images/clientes/7.png"
-                                alt=""
-                                class="img-fluid"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section id="nosotros" class="text-white">
     <div class="container">
         <div class="row">
             <div class="col-md-10 offset-md-2 col-lg-8 offset-lg-4">
                 <h1 class="mb-4" data-aos="fade-up"
                 data-aos-duration="1000"
-                data-aos-delay="0">Sobre <span>nosotros</span></h1>
+                data-aos-delay="0">
+                    <?php _e("Sobre", "replica"); ?>
+                    <span><?php _e("nosotros", "replica"); ?></span>
+                </h1>
                 <p data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="100">
-                    Replica es una empresa familiar. Natalia y Carlos,
-                    ambos socios, dirigimos un equipo de tres
-                    traductoras profesionales.
+                    <?php _e(
+                        "Replica es una empresa familiar. Natalia y Carlos, ambos socios, dirigimos un equipo de tres traductoras profesionales.",
+                        "replica"
+                    ); ?>
                 </p>
 
                 <p data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="200">
-                    Fundamos Replica en 2019 y hasta la fecha hemos
-                    asesorado a más de cien empresas extranjeras que
-                    hacen negocios en México, así como a empresas
-                    mexicanas en el extranjero.
+                    <?php _e(
+                        "Fundamos Replica en 2019 y hasta la fecha hemos asesorado a más de cien empresas extranjeras que hacen negocios en México, así como a empresas mexicanas en el extranjero.",
+                        "replica"
+                    ); ?>
                 </p>
 
                 <p data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="300">
-                    Nuestros clientes incluyen despachos de abogados
-                    líderes en México y Estados Unidos, firmas contables
-                    Big Four, empresas que cotizan en las bolsas de
-                    Nueva York y Toronto, unicornios, ONGs,
-                    universidades y tribunales en México y EUA.
+                    <?php _e(
+                        "Nuestros clientes incluyen despachos de abogados líderes en México y Estados Unidos, firmas contables Big Four, empresas que cotizan en las bolsas de Nueva York y Toronto, unicornios, ONGs, universidades y tribunales en México y EUA.",
+                        "replica"
+                    ); ?>
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<section
-    id="descanso"
-    class="parallax-window text-white py-60"
-    data-parallax="scroll"
+<section id="descanso" class="parallax-window text-white py-60" data-parallax="scroll"
     data-image-src="<?php echo esc_url(
         get_template_directory_uri()
-    ); ?>/assets/images/bg-descanso.png"
->
+    ); ?>/assets/images/bg-descanso.png">
     <div class="container">
         <div class="row">
             <div class="col-lg-7 my-lg-auto text-lg-start">
                 <h1 class="impuestos mb-0" data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="0">
-                    <span>Tradujimos los documentos</span> para<br />
-                    una <span>devolución de impuestos</span> de
+                    <span><?php _e(
+                        "Tradujimos los documentos",
+                        "replica"
+                    ); ?></span> <?php _e("para", "replica"); ?><br />
+                    <?php _e("una", "replica"); ?> <span><?php _e(
+     "devolución de impuestos",
+     "replica"
+ ); ?></span> <?php _e("de", "replica"); ?>
                 </h1>
             </div>
             <div class="col-lg-4 my-lg-auto text-lg-end">
                 <h1 class="cantidad mb-0" data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="100">
-                    $83 millones<br /><span>de dólares</span>
+                    $83 <?php _e("millones", "replica"); ?><br />
+                    <span><?php _e("de dólares", "replica"); ?></span>
                 </h1>
             </div>
         </div>
     </div>
 </section>
 
-<section
-    id="logros"
-    class="parallax-window"
-    data-parallax="scroll"
-    data-image-src=""
->
+<section id="logros" class="parallax-window" data-parallax="scroll" data-image-src="">
     <div class="container">
         <div class="row mb-md-5">
             <div class="col-md-3 mb-4 my-md-auto" data-aos="fade-up"
@@ -204,7 +131,10 @@
                     ); ?>/assets/images/logros/1.png"
                     alt=""
                 />
-                <p>Hemos apoyado a más de 400 clientes, incluyendo empresas y personas.</p>
+                <p><?php _e(
+                    "Hemos apoyado a más de 400 clientes, incluyendo empresas y personas.",
+                    "replica"
+                ); ?></p>
             </div>
             <div class="col-md-3 mb-4 my-md-auto" data-aos="fade-up"
             data-aos-duration="1000"
@@ -217,7 +147,10 @@
                     alt=""
                 />
                 <p>
-                    Cuidamos la confidencialidad de los documentos trabajando solo con traductoras internas.
+                    <?php _e(
+                        "Cuidamos la confidencialidad de los documentos trabajando solo con traductoras internas.",
+                        "replica"
+                    ); ?>
                 </p>
             </div>
             <div class="col-md-3 mb-4 my-md-auto" data-aos="fade-up"
@@ -231,21 +164,12 @@
                     alt=""
                 />
                 <p>
-                    Cumplimos con el pago de nuestros impuestos y nuestras obligaciones laborales.
+                    <?php _e(
+                        "Cumplimos con el pago de nuestros impuestos y nuestras obligaciones laborales.",
+                        "replica"
+                    ); ?>
                 </p>
             </div>
-            <!-- div class="col-md-3 mb-4 my-md-auto" data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="400">
-                <img
-                    class="img-fluid"
-                    src="<?php echo esc_url(
-                        get_template_directory_uri()
-                    ); ?>/assets/images/logros/4.png"
-                    alt=""
-                />
-                <p>Cumplimos con el pago de nuestros impuestos.</p>
-            </div -->
             <div class="col-md-3 mb-4 my-md-auto" data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="500">
@@ -257,28 +181,32 @@
                     alt=""
                 />
                 <p>
-                    Hemos participado como traductores en juicios en México, EUA, Hong Kong, Londres y La Haya.
+                    <?php _e(
+                        "Hemos participado como traductores en juicios en México, EUA, Hong Kong, Londres y La Haya.",
+                        "replica"
+                    ); ?>
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<section
-    id="equipo-1"
-    class="equipo parallax-window text-white py-60"
-    data-parallax="scroll"
+<section id="equipo-1" class="equipo parallax-window text-white py-60" data-parallax="scroll"
     data-image-src="<?php echo esc_url(
         get_template_directory_uri()
-    ); ?>/assets/images/bg-equipo-1.png"
->
+    ); ?>/assets/images/bg-equipo-1.png">
     <div class="decor"></div>
     <div class="container">
         <div class="row mb-4">
             <div class="col">
                 <h1 class="mb-0" data-aos="fade-up"
                 data-aos-duration="1000"
-                data-aos-delay="0">Nuestro <span>equipo</span></h1>
+                data-aos-delay="0">
+                    <?php _e("Nuestro", "replica"); ?> <span><?php _e(
+     "equipo",
+     "replica"
+ ); ?></span>
+                </h1>
             </div>
         </div>
         <div class="row">
@@ -292,7 +220,10 @@
                                 src="<?php echo esc_url(
                                     get_template_directory_uri()
                                 ); ?>/assets/images/equipo/1.png"
-                                alt=""
+                                alt="<?php esc_attr_e(
+                                    "Foto de Carlos",
+                                    "replica"
+                                ); ?>"
                                 class="img-fluid rounded mb-4 mb-lg-0"
                             />
                         </div>
@@ -301,27 +232,14 @@
                         <p data-aos="fade-up"
                         data-aos-duration="1000"
                         data-aos-delay="200">
-                            <span class="fs-1">Carlos</span> es un
-                            abogado bilingüe con formación en México y
-                            Estados Unidos. Ha trabajado en despachos de
-                            abogados en ambos países, así como en una
-                            empresa multinacional canadiense, acumulando
-                            experiencia como abogado litigante,
-                            transaccional e in-house. Cursó una maestría
-                            en derecho en la University of Chicago Law
-                            School, otra en derecho fiscal en la
-                            Universidad de Monterrey y la licenciatura
-                            en derecho en el Tecnológico de Monterrey.
-                            Además, fue profesor de inglés jurídico en
-                            esa misma institución. Ha estudiado en
-                            México, EUA, Francia e Inglaterra, y vivido
-                            en Chicago, Washington D.C., Monterrey y
-                            Chihuahua. Con doble nacionalidad mexicana y
-                            estadounidense, Carlos aporta una
-                            perspectiva intercultural, con
-                            especialización en derecho mexicano,
-                            estadounidense y tratados internacionales de
-                            comercio e inversión.
+                            <span class="fs-1"><?php _e(
+                                "Carlos",
+                                "replica"
+                            ); ?></span>
+                            <?php _e(
+                                "es un abogado bilingüe con formación en México y Estados Unidos. Ha trabajado en despachos de abogados en ambos países, así como en una empresa multinacional canadiense, acumulando experiencia como abogado litigante, transaccional e in-house. Cursó una maestría en derecho en la University of Chicago Law School, otra en derecho fiscal en la Universidad de Monterrey y la licenciatura en derecho en el Tecnológico de Monterrey. Además, fue profesor de inglés jurídico en esa misma institución. Ha estudiado en México, EUA, Francia e Inglaterra, y vivido en Chicago, Washington D.C., Monterrey y Chihuahua. Con doble nacionalidad mexicana y estadounidense, Carlos aporta una perspectiva intercultural, con especialización en derecho mexicano, estadounidense y tratados internacionales de comercio e inversión.",
+                                "replica"
+                            ); ?>
                         </p>
                     </div>
                 </div>
@@ -330,14 +248,10 @@
     </div>
 </section>
 
-<section
-    id="equipo-2"
-    class="equipo parallax-window text-white py-60"
-    data-parallax="scroll"
+<section id="equipo-2" class="equipo parallax-window text-white py-60" data-parallax="scroll"
     data-image-src="<?php echo esc_url(
         get_template_directory_uri()
-    ); ?>/assets/images/bg-equipo-2.png"
->
+    ); ?>/assets/images/bg-equipo-2.png">
     <div class="decor"></div>
     <div class="container">
         <div class="row">
@@ -351,7 +265,10 @@
                                 src="<?php echo esc_url(
                                     get_template_directory_uri()
                                 ); ?>/assets/images/equipo/2.png"
-                                alt=""
+                                alt="<?php esc_attr_e(
+                                    "Foto de Natalia",
+                                    "replica"
+                                ); ?>"
                                 class="img-fluid rounded mb-4 mb-lg-0"
                             />
                         </div>
@@ -359,26 +276,15 @@
                     <div class="col-lg-9 my-auto text-justify">
                         <p data-aos="fade-up"
                         data-aos-duration="1000"
-                        data-aos-delay="4000">
-                            <span class="fs-1">Natalia</span> es una
-                            abogada bilingüe, licenciada en derecho por
-                            el Tecnológico de Monterrey, con maestría en
-                            valuación de inmuebles y estudios de derecho
-                            internacional y teoría de la traducción en
-                            la Universidad de Chicago, el Instituto
-                            Lorenzo De' Medici en Italia y la
-                            Organización Mexicana de Traductores.
-                            Natalia trabajó varios años como abogada
-                            litigante y transaccional y también fue
-                            profesora de inglés en el Tecnológico de
-                            Monterrey. Natalia inició su práctica como
-                            traductora profesional en Mexicali, Baja
-                            California, y posteriormente lideró lo que
-                            ahora es Replica. Habiendo cursado la
-                            primaria en California y vivido en diversas
-                            ciudades de México y Estados Unidos, Natalia
-                            aporta una visión intercultural invaluable a
-                            su trabajo.
+                        data-aos-delay="400">
+                            <span class="fs-1"><?php _e(
+                                "Natalia",
+                                "replica"
+                            ); ?></span>
+                            <?php _e(
+                                'es una abogada bilingüe, licenciada en derecho por el Tecnológico de Monterrey, con maestría en valuación de inmuebles y estudios de derecho internacional y teoría de la traducción en la Universidad de Chicago, el Instituto Lorenzo De\' Medici en Italia y la Organización Mexicana de Traductores. Natalia trabajó varios años como abogada litigante y transaccional y también fue profesora de inglés en el Tecnológico de Monterrey. Natalia inició su práctica como traductora profesional en Mexicali, Baja California, y posteriormente lideró lo que ahora es Replica. Habiendo cursado la primaria en California y vivido en diversas ciudades de México y Estados Unidos, Natalia aporta una visión intercultural invaluable a su trabajo.',
+                                "replica"
+                            ); ?>
                         </p>
                     </div>
                 </div>
@@ -397,7 +303,10 @@
                             src="<?php echo esc_url(
                                 get_template_directory_uri()
                             ); ?>/assets/images/certificados/ico-certifiados.png"
-                            alt=""
+                            alt="<?php esc_attr_e(
+                                "Ícono certificados",
+                                "replica"
+                            ); ?>"
                             class="img-fluid"
                             data-aos="fade-up"
                             data-aos-duration="1000"
@@ -407,7 +316,10 @@
                     <div class="col-8 my-auto">
                         <h1 data-aos="fade-up"
                         data-aos-duration="1000"
-                        data-aos-delay="100">Certificados por:</h1>
+                        data-aos-delay="100"><?php _e(
+                            "Certificados por:",
+                            "replica"
+                        ); ?></h1>
                     </div>
                 </div>
             </div>
@@ -418,8 +330,9 @@
                             src="<?php echo esc_url(
                                 get_template_directory_uri()
                             ); ?>/assets/images/certificados/logo-pjf.png"
-                            alt=""
-                            class="logo img-fluid mb-4 mb-lg-0" data-aos="fade-up"
+                            alt="<?php esc_attr_e("Logo PJF", "replica"); ?>"
+                            class="logo img-fluid mb-4 mb-lg-0"
+                            data-aos="fade-up"
                             data-aos-duration="1000"
                             data-aos-delay="200"
                         />
@@ -429,8 +342,9 @@
                             src="<?php echo esc_url(
                                 get_template_directory_uri()
                             ); ?>/assets/images/certificados/logo-at.png"
-                            alt=""
-                            class="logo img-fluid mb-4 mb-lg-0" data-aos="fade-up"
+                            alt="<?php esc_attr_e("Logo AT", "replica"); ?>"
+                            class="logo img-fluid mb-4 mb-lg-0"
+                            data-aos="fade-up"
                             data-aos-duration="1000"
                             data-aos-delay="300"
                         />
@@ -440,8 +354,9 @@
                             src="<?php echo esc_url(
                                 get_template_directory_uri()
                             ); ?>/assets/images/certificados/logo-omt.png"
-                            alt=""
-                            class="logo img-fluid mb-4 mb-lg-0" data-aos="fade-up"
+                            alt="<?php esc_attr_e("Logo OMT", "replica"); ?>"
+                            class="logo img-fluid mb-4 mb-lg-0"
+                            data-aos="fade-up"
                             data-aos-duration="1000"
                             data-aos-delay="400"
                         />
@@ -451,8 +366,9 @@
                             src="<?php echo esc_url(
                                 get_template_directory_uri()
                             ); ?>/assets/images/certificados/logo-tfja.png"
-                            alt=""
-                            class="logo img-fluid mb-4 mb-lg-0" data-aos="fade-up"
+                            alt="<?php esc_attr_e("Logo TFJA", "replica"); ?>"
+                            class="logo img-fluid mb-4 mb-lg-0"
+                            data-aos="fade-up"
                             data-aos-duration="1000"
                             data-aos-delay="500"
                         />
@@ -462,7 +378,7 @@
         </div>
         <div class="row mb-4">
             <div class="col">
-                <hr / data-aos="fade-up"
+                <hr data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="600">
             </div>
@@ -476,7 +392,7 @@
             <div class="col-3">
                 <h1 class="fw-bold" data-aos="fade-up"
                 data-aos-duration="1000"
-                data-aos-delay="0">Servicios</h1>
+                data-aos-delay="0"><?php _e("Servicios", "replica"); ?></h1>
             </div>
         </div>
         <div class="row">
@@ -488,40 +404,38 @@
                         <div class="row">
                             <div class="col-lg-9 my-auto">
                                 <div class="row">
-                                    <div
-                                        class="col-3 my-auto text-center"
-                                    >
+                                    <div class="col-3 my-auto text-center">
                                         <h1>01.</h1>
                                         <img
                                             src="<?php echo esc_url(
                                                 get_template_directory_uri()
                                             ); ?>/assets/images/servicios/ico-1.png"
-                                            alt=""
+                                            alt="<?php esc_attr_e(
+                                                "Ícono documentos jurídicos",
+                                                "replica"
+                                            ); ?>"
                                             class="icono img-fluid"
                                         />
                                     </div>
-                                    <div
-                                        class="col-9 my-auto text-start"
-                                    >
-                                        <h1>Documentos jurídicos</h1>
+                                    <div class="col-9 my-auto text-start">
+                                        <h1><?php _e(
+                                            "Documentos jurídicos",
+                                            "replica"
+                                        ); ?></h1>
                                         <p>
-                                            Traducción profesional de
-                                            documentos jurídicos
-                                            inglés-español.  Con enfoque
-                                            en derecho mexicano, de
-                                            Estados Unidos y tratados
-                                            internacionales de comercio
-                                            e inversión.
+                                            <?php _e(
+                                                "Traducción profesional de documentos jurídicos inglés-español. Con enfoque en derecho mexicano, de Estados Unidos y tratados internacionales de comercio e inversión.",
+                                                "replica"
+                                            ); ?>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 my-auto text-center">
-                                <a
-                                    href="#contacto"
-                                    class="btn btn-lg rounded-pill"
-                                    >Contáctanos</a
-                                >
+                                <a href="#contacto" class="btn btn-lg rounded-pill"><?php _e(
+                                    "Contáctanos",
+                                    "replica"
+                                ); ?></a>
                             </div>
                         </div>
                     </div>
@@ -533,38 +447,38 @@
                         <div class="row">
                             <div class="col-lg-9 my-auto">
                                 <div class="row">
-                                    <div
-                                        class="col-3 my-auto text-center"
-                                    >
+                                    <div class="col-3 my-auto text-center">
                                         <h1>02.</h1>
                                         <img
                                             src="<?php echo esc_url(
                                                 get_template_directory_uri()
                                             ); ?>/assets/images/servicios/ico-2.png"
-                                            alt=""
+                                            alt="<?php esc_attr_e(
+                                                "Ícono documentos migratorios",
+                                                "replica"
+                                            ); ?>"
                                             class="icono img-fluid"
                                         />
                                     </div>
-                                    <div
-                                        class="col-9 my-auto text-start"
-                                    >
-                                        <h1>Documentos migratorios</h1>
+                                    <div class="col-9 my-auto text-start">
+                                        <h1><?php _e(
+                                            "Documentos migratorios",
+                                            "replica"
+                                        ); ?></h1>
                                         <p>
-                                            Traducción
-                                            de documentos personales
-                                            para trámites migratorios
-                                            ante el USCIS y las
-                                            autoridades mexicanas. 
+                                            <?php _e(
+                                                "Traducción de documentos personales para trámites migratorios ante el USCIS y las autoridades mexicanas.",
+                                                "replica"
+                                            ); ?>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 my-auto text-center">
-                                <a
-                                    href="#contacto"
-                                    class="btn btn-lg rounded-pill"
-                                    >Contáctanos</a
-                                >
+                                <a href="#contacto" class="btn btn-lg rounded-pill"><?php _e(
+                                    "Contáctanos",
+                                    "replica"
+                                ); ?></a>
                             </div>
                         </div>
                     </div>
@@ -576,34 +490,38 @@
                         <div class="row">
                             <div class="col-lg-9 my-auto">
                                 <div class="row">
-                                    <div
-                                        class="col-3 my-auto text-center"
-                                    >
+                                    <div class="col-3 my-auto text-center">
                                         <h1>03.</h1>
                                         <img
                                             src="<?php echo esc_url(
                                                 get_template_directory_uri()
                                             ); ?>/assets/images/servicios/ico-3.png"
-                                            alt=""
+                                            alt="<?php esc_attr_e(
+                                                "Ícono documentos financieros",
+                                                "replica"
+                                            ); ?>"
                                             class="icono img-fluid"
                                         />
                                     </div>
-                                    <div
-                                        class="col-9 my-auto text-start"
-                                    >
-                                        <h1>Documentos financieros</h1>
+                                    <div class="col-9 my-auto text-start">
+                                        <h1><?php _e(
+                                            "Documentos financieros",
+                                            "replica"
+                                        ); ?></h1>
                                         <p>
-                                            Traducción de estados financieros, estados de cuenta bancarios y documentos relacionados.
+                                            <?php _e(
+                                                "Traducción de estados financieros, estados de cuenta bancarios y documentos relacionados.",
+                                                "replica"
+                                            ); ?>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 my-auto text-center">
-                                <a
-                                    href="#contacto"
-                                    class="btn btn-lg rounded-pill"
-                                    >Contáctanos</a
-                                >
+                                <a href="#contacto" class="btn btn-lg rounded-pill"><?php _e(
+                                    "Contáctanos",
+                                    "replica"
+                                ); ?></a>
                             </div>
                         </div>
                     </div>
@@ -615,34 +533,38 @@
                         <div class="row">
                             <div class="col-lg-9 my-auto">
                                 <div class="row">
-                                    <div
-                                        class="col-3 my-auto text-center"
-                                    >
+                                    <div class="col-3 my-auto text-center">
                                         <h1>04.</h1>
                                         <img
                                             src="<?php echo esc_url(
                                                 get_template_directory_uri()
                                             ); ?>/assets/images/servicios/ico-4.png"
-                                            alt=""
+                                            alt="<?php esc_attr_e(
+                                                "Ícono documentos académicos",
+                                                "replica"
+                                            ); ?>"
                                             class="icono img-fluid"
                                         />
                                     </div>
-                                    <div
-                                        class="col-9 my-auto text-start"
-                                    >
-                                        <h1>Documentos académicos</h1>
+                                    <div class="col-9 my-auto text-start">
+                                        <h1><?php _e(
+                                            "Documentos académicos",
+                                            "replica"
+                                        ); ?></h1>
                                         <p>
-                                            Traducción de documentos académicos como títulos y certificados de estudios.
+                                            <?php _e(
+                                                "Traducción de documentos académicos como títulos y certificados de estudios.",
+                                                "replica"
+                                            ); ?>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 my-auto text-center">
-                                <a
-                                    href="#contacto"
-                                    class="btn btn-lg rounded-pill"
-                                    >Contáctanos</a
-                                >
+                                <a href="#contacto" class="btn btn-lg rounded-pill"><?php _e(
+                                    "Contáctanos",
+                                    "replica"
+                                ); ?></a>
                             </div>
                         </div>
                     </div>
@@ -659,21 +581,20 @@
                 <h1 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="0">
-                    Testimonios de<br /><span class="fw-bold"
-                        >clientes</span
-                    >
+                    <?php _e("Testimonios de", "replica"); ?><br />
+                    <span class="fw-bold"><?php _e(
+                        "clientes",
+                        "replica"
+                    ); ?></span>
                 </h1>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <!-- Slider main container -->
-                <div
-                    class="swiper swiper-testimonios"
-                    data-aos="fade-up"
+                <div class="swiper swiper-testimonios" data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-delay="100"
-                >
+                    data-aos-delay="100">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slide 1 -->
@@ -688,24 +609,24 @@
                                         <i class="fa-solid fa-star"></i>
                                     </h5>
                                     <p class="card-text">
-                                        Respuesta inmediata y gran calidad de traducciones
+                                        <?php _e(
+                                            "Respuesta inmediata y gran calidad de traducciones",
+                                            "replica"
+                                        ); ?>
                                     </p>
                                     <ul class="list-inline mb-0">
-                                        <!-- li class="list-inline-item">
-                                            <img
-                                                src="<?php echo esc_url(
-                                                    get_template_directory_uri()
-                                                ); ?>/assets/images/testimonios/1.png"
-                                                class="icon img-fluid"
-                                                alt="..."
-                                            />
-                                        </li -->
                                         <li class="list-inline-item">
                                             <p class="fw-bold mb-0">
-                                                Karla Monteverde
+                                                <?php _e(
+                                                    "Karla Monteverde",
+                                                    "replica"
+                                                ); ?>
                                             </p>
                                             <p class="handle mb-0">
-                                                Vizsla Silver
+                                                <?php _e(
+                                                    "Vizsla Silver",
+                                                    "replica"
+                                                ); ?>
                                             </p>
                                         </li>
                                     </ul>
@@ -725,24 +646,24 @@
                                         <i class="fa-solid fa-star"></i>
                                     </h5>
                                     <p class="card-text">
-                                        Estoy muy satisfecha y contenta con el servicio que he recibido por parte de ustedes, siempre cumplen con las fechas de entrega, nos apoyan con traducciones que en ocasiones son de imprevisto y hacen el esfuerzo por entregarnos en tiempo, un equipo muy dedicado y ampliamente recomendado.
+                                        <?php _e(
+                                            "Estoy muy satisfecha y contenta con el servicio que he recibido por parte de ustedes, siempre cumplen con las fechas de entrega, nos apoyan con traducciones que en ocasiones son de imprevisto y hacen el esfuerzo por entregarnos en tiempo, un equipo muy dedicado y ampliamente recomendado.",
+                                            "replica"
+                                        ); ?>
                                     </p>
                                     <ul class="list-inline mb-0">
-                                        <!-- li class="list-inline-item">
-                                            <img
-                                                src="<?php echo esc_url(
-                                                    get_template_directory_uri()
-                                                ); ?>/assets/images/testimonios/1.png"
-                                                class="icon img-fluid"
-                                                alt="..."
-                                            />
-                                        </li -->
                                         <li class="list-inline-item">
                                             <p class="fw-bold mb-0">
-                                                Yesenia Hernández
+                                                <?php _e(
+                                                    "Yesenia Hernández",
+                                                    "replica"
+                                                ); ?>
                                             </p>
                                             <p class="handle mb-0">
-                                                Motorad
+                                                <?php _e(
+                                                    "Motorad",
+                                                    "replica"
+                                                ); ?>
                                             </p>
                                         </li>
                                     </ul>
@@ -762,24 +683,21 @@
                                         <i class="fa-solid fa-star"></i>
                                     </h5>
                                     <p class="card-text">
-                                        El equipo de Replica trabaja de manera sumamente profesional, cuando les he pedido trabajos importantes siempre entregan en tiempo y forma y mantienen una comunicación constante y muy abierta. Son un equipo con una gran disposición y sobre todo confiables.
+                                        <?php _e(
+                                            "El equipo de Replica trabaja de manera sumamente profesional, cuando les he pedido trabajos importantes siempre entregan en tiempo y forma y mantienen una comunicación constante y muy abierta. Son un equipo con una gran disposición y sobre todo confiables.",
+                                            "replica"
+                                        ); ?>
                                     </p>
                                     <ul class="list-inline mb-0">
-                                        <!-- li class="list-inline-item">
-                                            <img
-                                                src="<?php echo esc_url(
-                                                    get_template_directory_uri()
-                                                ); ?>/assets/images/testimonios/1.png"
-                                                class="icon img-fluid"
-                                                alt="..."
-                                            />
-                                        </li -->
                                         <li class="list-inline-item">
                                             <p class="fw-bold mb-0">
-                                                Rocío Cañada
+                                                <?php _e(
+                                                    "Rocío Cañada",
+                                                    "replica"
+                                                ); ?>
                                             </p>
                                             <p class="handle mb-0">
-                                                Nonco
+                                                <?php _e("Nonco", "replica"); ?>
                                             </p>
                                         </li>
                                     </ul>
@@ -799,24 +717,24 @@
                                         <i class="fa-solid fa-star"></i>
                                     </h5>
                                     <p class="card-text">
-                                        Trabajar con RLT ha sido una experiencia muy satisfactoria, principalmente por los tiempos de respuesta tan eficientes y la excelente calidad en la traducción.
+                                        <?php _e(
+                                            "Trabajar con RLT ha sido una experiencia muy satisfactoria, principalmente por los tiempos de respuesta tan eficientes y la excelente calidad en la traducción.",
+                                            "replica"
+                                        ); ?>
                                     </p>
                                     <ul class="list-inline mb-0">
-                                        <!-- li class="list-inline-item">
-                                            <img
-                                                src="<?php echo esc_url(
-                                                    get_template_directory_uri()
-                                                ); ?>/assets/images/testimonios/1.png"
-                                                class="icon img-fluid"
-                                                alt="..."
-                                            />
-                                        </li -->
                                         <li class="list-inline-item">
                                             <p class="fw-bold mb-0">
-                                                Alejandro Martínez
+                                                <?php _e(
+                                                    "Alejandro Martínez",
+                                                    "replica"
+                                                ); ?>
                                             </p>
                                             <p class="handle mb-0">
-                                                Chevez Ruiz Zamarripa
+                                                <?php _e(
+                                                    "Chevez Ruiz Zamarripa",
+                                                    "replica"
+                                                ); ?>
                                             </p>
                                         </li>
                                     </ul>
@@ -836,24 +754,24 @@
                                         <i class="fa-solid fa-star"></i>
                                     </h5>
                                     <p class="card-text">
-                                        Excelente servicio y calidad.
+                                        <?php _e(
+                                            "Excelente servicio y calidad.",
+                                            "replica"
+                                        ); ?>
                                     </p>
                                     <ul class="list-inline mb-0">
-                                        <!-- li class="list-inline-item">
-                                            <img
-                                                src="<?php echo esc_url(
-                                                    get_template_directory_uri()
-                                                ); ?>/assets/images/testimonios/1.png"
-                                                class="icon img-fluid"
-                                                alt="..."
-                                            />
-                                        </li -->
                                         <li class="list-inline-item">
                                             <p class="fw-bold mb-0">
-                                                Herlinda González
+                                                <?php _e(
+                                                    "Herlinda González",
+                                                    "replica"
+                                                ); ?>
                                             </p>
                                             <p class="handle mb-0">
-                                                Teck Resources
+                                                <?php _e(
+                                                    "Teck Resources",
+                                                    "replica"
+                                                ); ?>
                                             </p>
                                         </li>
                                     </ul>
@@ -873,24 +791,24 @@
                                         <i class="fa-solid fa-star"></i>
                                     </h5>
                                     <p class="card-text">
-                                        Son unos profesionales en toda la extensión de la palabra, ha sido una grata experiencia.
+                                        <?php _e(
+                                            "Son unos profesionales en toda la extensión de la palabra, ha sido una grata experiencia.",
+                                            "replica"
+                                        ); ?>
                                     </p>
                                     <ul class="list-inline mb-0">
-                                        <!-- li class="list-inline-item">
-                                            <img
-                                                src="<?php echo esc_url(
-                                                    get_template_directory_uri()
-                                                ); ?>/assets/images/testimonios/1.png"
-                                                class="icon img-fluid"
-                                                alt="..."
-                                            />
-                                        </li -->
                                         <li class="list-inline-item">
                                             <p class="fw-bold mb-0">
-                                                Pablo Mendez
+                                                <?php _e(
+                                                    "Pablo Mendez",
+                                                    "replica"
+                                                ); ?>
                                             </p>
                                             <p class="handle mb-0">
-                                                EC Rubio
+                                                <?php _e(
+                                                    "EC Rubio",
+                                                    "replica"
+                                                ); ?>
                                             </p>
                                         </li>
                                     </ul>
@@ -910,24 +828,24 @@
                                         <i class="fa-solid fa-star"></i>
                                     </h5>
                                     <p class="card-text">
-                                        Sí recomiendo trabajar con Replica.
+                                        <?php _e(
+                                            "Sí recomiendo trabajar con Replica.",
+                                            "replica"
+                                        ); ?>
                                     </p>
                                     <ul class="list-inline mb-0">
-                                        <!-- li class="list-inline-item">
-                                            <img
-                                                src="<?php echo esc_url(
-                                                    get_template_directory_uri()
-                                                ); ?>/assets/images/testimonios/1.png"
-                                                class="icon img-fluid"
-                                                alt="..."
-                                            />
-                                        </li -->
                                         <li class="list-inline-item">
                                             <p class="fw-bold mb-0">
-                                                Verónica Alvarado
+                                                <?php _e(
+                                                    "Verónica Alvarado",
+                                                    "replica"
+                                                ); ?>
                                             </p>
                                             <p class="handle mb-0">
-                                                Mahle Behr
+                                                <?php _e(
+                                                    "Mahle Behr",
+                                                    "replica"
+                                                ); ?>
                                             </p>
                                         </li>
                                     </ul>
@@ -947,24 +865,24 @@
                                         <i class="fa-solid fa-star"></i>
                                     </h5>
                                     <p class="card-text">
-                                        Ampliamente recomendados, servicio muy profesional y trabajos de muy alta calidad.
+                                        <?php _e(
+                                            "Ampliamente recomendados, servicio muy profesional y trabajos de muy alta calidad.",
+                                            "replica"
+                                        ); ?>
                                     </p>
                                     <ul class="list-inline mb-0">
-                                        <!-- li class="list-inline-item">
-                                            <img
-                                                src="<?php echo esc_url(
-                                                    get_template_directory_uri()
-                                                ); ?>/assets/images/testimonios/1.png"
-                                                class="icon img-fluid"
-                                                alt="..."
-                                            />
-                                        </li -->
                                         <li class="list-inline-item">
                                             <p class="fw-bold mb-0">
-                                                Martín Arzate
+                                                <?php _e(
+                                                    "Martín Arzate",
+                                                    "replica"
+                                                ); ?>
                                             </p>
                                             <p class="handle mb-0">
-                                                Prokarma (PK Global)
+                                                <?php _e(
+                                                    "Prokarma (PK Global)",
+                                                    "replica"
+                                                ); ?>
                                             </p>
                                         </li>
                                     </ul>
@@ -984,25 +902,20 @@
                                         <i class="fa-solid fa-star"></i>
                                     </h5>
                                     <p class="card-text">
-                                        Carlos y Natalia son amables, profesionales y responden con mucha rapidez. Todo el tiempo atendieron mis dudas y me guiaron con recomendaciones. Sin duda volvería a solicitar sus servicios y los recomiendo ampliamente.
+                                        <?php _e(
+                                            "Carlos y Natalia son amables, profesionales y responden con mucha rapidez. Todo el tiempo atendieron mis dudas y me guiaron con recomendaciones. Sin duda volvería a solicitar sus servicios y los recomiendo ampliamente.",
+                                            "replica"
+                                        ); ?>
                                     </p>
                                     <ul class="list-inline mb-0">
-                                        <!-- li class="list-inline-item">
-                                            <img
-                                                src="<?php echo esc_url(
-                                                    get_template_directory_uri()
-                                                ); ?>/assets/images/testimonios/1.png"
-                                                class="icon img-fluid"
-                                                alt="..."
-                                            />
-                                        </li -->
                                         <li class="list-inline-item">
                                             <p class="fw-bold mb-0">
-                                                Melisa López
+                                                <?php _e(
+                                                    "Melisa López",
+                                                    "replica"
+                                                ); ?>
                                             </p>
-                                            <p class="handle mb-0">
-
-                                            </p>
+                                            <p class="handle mb-0"></p>
                                         </li>
                                     </ul>
                                 </div>
@@ -1021,25 +934,20 @@
                                         <i class="fa-solid fa-star"></i>
                                     </h5>
                                     <p class="card-text">
-                                        Muy buena atención, transparentes y claros en la información, puntual seguimiento de los trámites.
+                                        <?php _e(
+                                            "Muy buena atención, transparentes y claros en la información, puntual seguimiento de los trámites.",
+                                            "replica"
+                                        ); ?>
                                     </p>
                                     <ul class="list-inline mb-0">
-                                        <!-- li class="list-inline-item">
-                                            <img
-                                                src="<?php echo esc_url(
-                                                    get_template_directory_uri()
-                                                ); ?>/assets/images/testimonios/1.png"
-                                                class="icon img-fluid"
-                                                alt="..."
-                                            />
-                                        </li -->
                                         <li class="list-inline-item">
                                             <p class="fw-bold mb-0">
-                                                Joaquín Loya
+                                                <?php _e(
+                                                    "Joaquín Loya",
+                                                    "replica"
+                                                ); ?>
                                             </p>
-                                            <p class="handle mb-0">
-
-                                            </p>
+                                            <p class="handle mb-0"></p>
                                         </li>
                                     </ul>
                                 </div>
@@ -1058,25 +966,20 @@
                                         <i class="fa-solid fa-star"></i>
                                     </h5>
                                     <p class="card-text">
-                                        Hemos solicitado traducciones, algunas muy voluminosas, y siempre cumplen con los tiempos. Excelentes traductores y abogados.
+                                        <?php _e(
+                                            "Hemos solicitado traducciones, algunas muy voluminosas, y siempre cumplen con los tiempos. Excelentes traductores y abogados.",
+                                            "replica"
+                                        ); ?>
                                     </p>
                                     <ul class="list-inline mb-0">
-                                        <!-- li class="list-inline-item">
-                                            <img
-                                                src="<?php echo esc_url(
-                                                    get_template_directory_uri()
-                                                ); ?>/assets/images/testimonios/1.png"
-                                                class="icon img-fluid"
-                                                alt="..."
-                                            />
-                                        </li -->
                                         <li class="list-inline-item">
                                             <p class="fw-bold mb-0">
-                                                Emilio Arteaga
+                                                <?php _e(
+                                                    "Emilio Arteaga",
+                                                    "replica"
+                                                ); ?>
                                             </p>
-                                            <p class="handle mb-0">
-
-                                            </p>
+                                            <p class="handle mb-0"></p>
                                         </li>
                                     </ul>
                                 </div>
@@ -1093,141 +996,30 @@
     </div>
 </section>
 
-<section
-    id="contacto"
-    class="parallax-window py-60"
-    data-parallax="scroll"
-    data-image-src=""
->
+<section id="contacto" class="parallax-window py-60" data-parallax="scroll" data-image-src="">
     <div class="container">
         <div class="row mb-4">
             <div class="col text-center">
                 <h1 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="0">
-                    ¿Necesitas traducciones?<br /><span
-                        >Somos tu mejor opción lingüística</span
-                    >
+                    <?php _e("¿Necesitas traducciones?", "replica"); ?><br />
+                    <span><?php _e(
+                        "Somos tu mejor opción lingüística",
+                        "replica"
+                    ); ?></span>
                 </h1>
             </div>
         </div>
         <div class="row">
-            <!-- div class="col-lg-6 mb-4">
-                <div id="form-1" class="formulario" data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="100">
-                    <h1 class="titulo">Formulario de contacto</h1>
-
-                    <div id="form-messages"></div>
-
-                    <form
-                        action="./mailer.php"
-                        method="POST"
-                        class="row g-3 needs-validation contact-form mb-4 mb-lg-0"
-                        id="ajax-contact"
-                        novalidate
-                    >
-                        <div class="col-md-12 form-floating">
-                            <input
-                                type="text"
-                                class="form-control shadow-none"
-                                id="nombre"
-                                name="nombre"
-                                placeholder="Nombre completo*"
-                                pattern=".{5,50}"
-                                required
-                            />
-                            <label for="nombre" class="form-label"
-                                >Nombre completo*</label
-                            >
-                            <div class="valid-feedback">
-                                ¡Se ve bien!
-                            </div>
-                            <div class="invalid-feedback">
-                                Por favor introduce tu nombre completo.
-                            </div>
-                        </div>
-                        <div class="col-md-6 form-floating">
-                            <input
-                                type="email"
-                                class="form-control shadow-none"
-                                id="correo"
-                                name="correo"
-                                placeholder="Correo electrónico*"
-                                required
-                            />
-                            <label for="correo" class="form-label"
-                                >Correo electrónico*</label
-                            >
-                            <div class="valid-feedback">
-                                ¡Se ve bien!
-                            </div>
-                            <div class="invalid-feedback">
-                                Por favor introduce una dirección de
-                                correo válida.
-                            </div>
-                        </div>
-                        <div class="col-md-6 form-floating">
-                            <input
-                                type="tel"
-                                class="form-control shadow-none"
-                                id="telefono"
-                                name="telefono"
-                                placeholder="Teléfono*"
-                                required
-                            />
-                            <label for="telefono" class="form-label"
-                                >Teléfono*</label
-                            >
-                            <div class="valid-feedback">
-                                ¡Se ve bien!
-                            </div>
-                            <div class="invalid-feedback">
-                                Por favor introduce un número de
-                                teléfono válido.
-                            </div>
-                        </div>
-                        <div class="col-md-12 form-floating mb-4">
-                            <textarea
-                                class="form-control shadow-none"
-                                id="mensaje"
-                                name="mensaje"
-                                placeholder="Mensaje*"
-                                style="height: 100px"
-                                required
-                            ></textarea>
-                            <label for="mensaje">Mensaje*</label>
-                            <div class="valid-feedback">
-                                ¡Se ve bien!
-                            </div>
-                            <div class="invalid-feedback">
-                                Por favor introduce tu mensaje.
-                            </div>
-                        </div>
-                        <div class="col-md-6 my-auto">
-                            <button
-                                type="submit"
-                                class="btn btn-primary btn-lg btn-block rounded-pill"
-                            >
-                                <i class="fa-solid fa-paper-plane"></i>
-                                Enviar
-                            </button>
-                            <div id="hold-on-a-sec">
-                                <i
-                                    id="contact-spinner"
-                                    class="fas fa-spinner fa-spin"
-                                ></i>
-                                Por favor espera..
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div -->
             <div class="col-12 col-lg-8 offset-lg-2">
                 <div id="form-2" class="formulario" data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="200">
-                    <h1 class="titulo">Solicita tu cotización</h1>
+                    <h1 class="titulo"><?php _e(
+                        "Solicita tu cotización",
+                        "replica"
+                    ); ?></h1>
 
                     <div id="form-messages"></div>
 
@@ -1244,18 +1036,25 @@
                                 class="form-control shadow-none"
                                 id="nombre"
                                 name="nombre"
-                                placeholder="Nombre completo*"
+                                placeholder="<?php esc_attr_e(
+                                    "Nombre completo*",
+                                    "replica"
+                                ); ?>"
                                 pattern=".{5,50}"
                                 required
                             />
-                            <label for="nombre" class="form-label"
-                                >Nombre completo*</label
-                            >
+                            <label for="nombre" class="form-label"><?php _e(
+                                "Nombre completo*",
+                                "replica"
+                            ); ?></label>
                             <div class="valid-feedback">
-                                ¡Se ve bien!
+                                <?php _e("¡Se ve bien!", "replica"); ?>
                             </div>
                             <div class="invalid-feedback">
-                                Por favor introduce tu nombre completo.
+                                <?php _e(
+                                    "Por favor introduce tu nombre completo.",
+                                    "replica"
+                                ); ?>
                             </div>
                         </div>
                         <div class="col-md-6 form-floating">
@@ -1264,18 +1063,24 @@
                                 class="form-control shadow-none"
                                 id="correo"
                                 name="correo"
-                                placeholder="Correo electrónico*"
+                                placeholder="<?php esc_attr_e(
+                                    "Correo electrónico*",
+                                    "replica"
+                                ); ?>"
                                 required
                             />
-                            <label for="correo" class="form-label"
-                                >Correo electrónico*</label
-                            >
+                            <label for="correo" class="form-label"><?php _e(
+                                "Correo electrónico*",
+                                "replica"
+                            ); ?></label>
                             <div class="valid-feedback">
-                                ¡Se ve bien!
+                                <?php _e("¡Se ve bien!", "replica"); ?>
                             </div>
                             <div class="invalid-feedback">
-                                Por favor introduce una dirección de
-                                correo válida.
+                                <?php _e(
+                                    "Por favor introduce una dirección de correo válida.",
+                                    "replica"
+                                ); ?>
                             </div>
                         </div>
                         <div class="col-md-6 form-floating">
@@ -1284,18 +1089,24 @@
                                 class="form-control shadow-none"
                                 id="telefono"
                                 name="telefono"
-                                placeholder="Teléfono*"
+                                placeholder="<?php esc_attr_e(
+                                    "Teléfono*",
+                                    "replica"
+                                ); ?>"
                                 required
                             />
-                            <label for="telefono" class="form-label"
-                                >Teléfono*</label
-                            >
+                            <label for="telefono" class="form-label"><?php _e(
+                                "Teléfono*",
+                                "replica"
+                            ); ?></label>
                             <div class="valid-feedback">
-                                ¡Se ve bien!
+                                <?php _e("¡Se ve bien!", "replica"); ?>
                             </div>
                             <div class="invalid-feedback">
-                                Por favor introduce un número de
-                                teléfono válido.
+                                <?php _e(
+                                    "Por favor introduce un número de teléfono válido.",
+                                    "replica"
+                                ); ?>
                             </div>
                         </div>
                         <div class="col-md-6 form-floating">
@@ -1304,19 +1115,24 @@
                                 class="form-control shadow-none"
                                 id="idioma-nativo"
                                 name="idioma-nativo"
-                                placeholder="Idioma nativo*"
+                                placeholder="<?php esc_attr_e(
+                                    "Idioma nativo*",
+                                    "replica"
+                                ); ?>"
                                 required
                             />
-                            <label
-                                for="idioma-nativo"
-                                class="form-label"
-                                >Idioma nativo*</label
-                            >
+                            <label for="idioma-nativo" class="form-label"><?php _e(
+                                "Idioma nativo*",
+                                "replica"
+                            ); ?></label>
                             <div class="valid-feedback">
-                                ¡Se ve bien!
+                                <?php _e("¡Se ve bien!", "replica"); ?>
                             </div>
                             <div class="invalid-feedback">
-                                Por favor introduce tu idioma nativo.
+                                <?php _e(
+                                    "Por favor introduce tu idioma nativo.",
+                                    "replica"
+                                ); ?>
                             </div>
                         </div>
                         <div class="col-md-6 form-floating">
@@ -1325,27 +1141,33 @@
                                 class="form-control shadow-none"
                                 id="idioma-meta"
                                 name="idioma-meta"
-                                placeholder="Idioma nativo*"
+                                placeholder="<?php esc_attr_e(
+                                    "Idioma meta*",
+                                    "replica"
+                                ); ?>"
                                 required
                             />
-                            <label for="idioma-meta" class="form-label"
-                                >Idioma meta*</label
-                            >
+                            <label for="idioma-meta" class="form-label"><?php _e(
+                                "Idioma meta*",
+                                "replica"
+                            ); ?></label>
                             <div class="valid-feedback">
-                                ¡Se ve bien!
+                                <?php _e("¡Se ve bien!", "replica"); ?>
                             </div>
                             <div class="invalid-feedback">
-                                Por favor introduce tu idioma meta.
+                                <?php _e(
+                                    "Por favor introduce tu idioma meta.",
+                                    "replica"
+                                ); ?>
                             </div>
                         </div>
                         <div class="col-md-6 my-auto mt-4">
-                            <label
-                                for="userfile"
-                                class="form-label btn"
-                            >
+                            <label for="userfile" class="form-label btn">
                                 <i class="fa-solid fa-paperclip"></i>
-                                Adjunta el archivo a traducir (.doc,
-                                .pdf)*
+                                <?php _e(
+                                    "Adjunta el archivo a traducir (.doc, .pdf)*",
+                                    "replica"
+                                ); ?>
                             </label>
                             <input
                                 type="hidden"
@@ -1362,7 +1184,10 @@
                                 required
                             />
                             <div id="fileUploadBlock" class="form-text">
-                                Tamaño máximo de archivo: 10 MB
+                                <?php _e(
+                                    "Tamaño máximo de archivo: 10 MB",
+                                    "replica"
+                                ); ?>
                             </div>
                         </div>
                         <div class="col-md-6 my-auto mt-4">
@@ -1371,21 +1196,25 @@
                                 class="form-control shadow-none"
                                 id="fecha-entrega"
                                 name="fecha-entrega"
-                                placeholder="Fecha de entrega*"
+                                placeholder="<?php esc_attr_e(
+                                    "Fecha de entrega*",
+                                    "replica"
+                                ); ?>"
                                 lang="es"
                                 required
                             />
-                            <label
-                                for="fecha-entrega"
-                                class="form-label"
-                                >Fecha de entrega*</label
-                            >
+                            <label for="fecha-entrega" class="form-label"><?php _e(
+                                "Fecha de entrega*",
+                                "replica"
+                            ); ?></label>
                             <div class="valid-feedback">
-                                ¡Se ve bien!
+                                <?php _e("¡Se ve bien!", "replica"); ?>
                             </div>
                             <div class="invalid-feedback">
-                                Por favor introduce una fecha de
-                                entrega.
+                                <?php _e(
+                                    "Por favor introduce una fecha de entrega.",
+                                    "replica"
+                                ); ?>
                             </div>
                         </div>
                         <div class="col-md-12 form-floating mb-4">
@@ -1393,34 +1222,35 @@
                                 class="form-control shadow-none"
                                 id="comentarios"
                                 name="comentarios"
-                                placeholder="Comentarios*"
+                                placeholder="<?php esc_attr_e(
+                                    "Comentarios*",
+                                    "replica"
+                                ); ?>"
                                 style="height: 100px"
                                 required
                             ></textarea>
-                            <label for="comentarios"
-                                >Comentarios*</label
-                            >
+                            <label for="comentarios"><?php _e(
+                                "Comentarios*",
+                                "replica"
+                            ); ?></label>
                             <div class="valid-feedback">
-                                ¡Se ve bien!
+                                <?php _e("¡Se ve bien!", "replica"); ?>
                             </div>
                             <div class="invalid-feedback">
-                                Por favor introduce tus comentarios.
+                                <?php _e(
+                                    "Por favor introduce tus comentarios.",
+                                    "replica"
+                                ); ?>
                             </div>
                         </div>
                         <div class="col-md-12 my-auto text-end">
-                            <button
-                                type="submit"
-                                class="btn btn-primary btn-lg btn-block rounded-pill"
-                            >
+                            <button type="submit" class="btn btn-primary btn-lg btn-block rounded-pill">
                                 <i class="fa-solid fa-paper-plane"></i>
-                                Enviar
+                                <?php _e("Enviar", "replica"); ?>
                             </button>
                             <div id="hold-on-a-sec">
-                                <i
-                                    id="contact-spinner"
-                                    class="fas fa-spinner fa-spin"
-                                ></i>
-                                Por favor espera..
+                                <i id="contact-spinner" class="fas fa-spinner fa-spin"></i>
+                                <?php _e("Por favor espera..", "replica"); ?>
                             </div>
                         </div>
                     </form>
@@ -1437,19 +1267,16 @@
                 <h1 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="0">
-                    <span class="fw-bold">Blog</span>
+                    <span class="fw-bold"><?php _e("Blog", "replica"); ?></span>
                 </h1>
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <!-- Slider main container -->
-                <div
-                    class="swiper swiper-blog"
-                    data-aos="fade-up"
+                <div class="swiper swiper-blog" data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-delay="100"
-                >
+                    data-aos-delay="100">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <?php
@@ -1479,21 +1306,24 @@
                                         <a href="<?php the_permalink(); ?>">
                                             <h3 class="card-title"><?php the_title(); ?></h3>
                                         </a>
-                                        <!-- p class="card-text">< get_the_excerpt(); ></p -->
-                                        <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-lg rounded-pill">Leer más</a>
+                                        <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-lg rounded-pill">
+                                            <?php _e("Leer más", "replica"); ?>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
 
                         <?php
-                            endwhile; ?>
-                        <?php wp_reset_postdata();
-                            // Reset post data
-                            ?>
-                        <?php
+                            endwhile;
+                            wp_reset_postdata(); // Reset post data
                         else:
                              ?>
-                            <div class="swiper-slide text-center">No se encontraron posts.</div>
+                            <div class="swiper-slide text-center">
+                                <?php _e(
+                                    "No se encontraron posts.",
+                                    "replica"
+                                ); ?>
+                            </div>
                         <?php
                         endif;
                         ?>
@@ -1507,16 +1337,15 @@
         </div>
         <div class="row">
             <div class="text-center">
-                <a
-                    href="<?php echo esc_url(
-                        get_category_link(get_cat_ID("blog"))
-                    ); ?>"
+                <a href="<?php echo esc_url(
+                    get_category_link(get_cat_ID("blog"))
+                ); ?>"
                     class="btn btn-lg btn-outline-light rounded-pill"
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-delay="200"
-                    >Ver más</a
-                >
+                    data-aos-delay="200">
+                    <?php _e("Ver más", "replica"); ?>
+                </a>
             </div>
         </div>
     </div>
