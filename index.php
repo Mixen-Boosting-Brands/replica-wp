@@ -237,7 +237,15 @@
                                 "replica"
                             ); ?></span>
                             <?php _e(
-                                "es un abogado bilingüe con formación en México y Estados Unidos. Ha trabajado en despachos de abogados en ambos países, así como en una empresa multinacional canadiense, acumulando experiencia como abogado litigante, transaccional e in-house. Cursó una maestría en derecho en la University of Chicago Law School, otra en derecho fiscal en la Universidad de Monterrey y la licenciatura en derecho en el Tecnológico de Monterrey. Además, fue profesor de inglés jurídico en esa misma institución. Ha estudiado en México, EUA, Francia e Inglaterra, y vivido en Chicago, Washington D.C., Monterrey y Chihuahua. Con doble nacionalidad mexicana y estadounidense, Carlos aporta una perspectiva intercultural, con especialización en derecho mexicano, estadounidense y tratados internacionales de comercio e inversión.",
+                                "es un abogado bilingüe con formación en México y Estados Unidos. Ha trabajado en despachos de abogados en ambos países, así como en una empresa multinacional canadiense, acumulando experiencia como abogado litigante, transaccional e in-house. Cursó una maestría en derecho en la University of Chicago Law School, otra en derecho fiscal en la Universidad de Monterrey y la licenciatura en derecho en el Tecnológico de Monterrey. Además, fue profesor de inglés jurídico en esa misma institución.",
+                                "replica"
+                            ); ?>
+                        </p>
+                        <p data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="300">
+                            <?php _e(
+                                "Ha estudiado en México, EUA, Francia e Inglaterra, y vivido en Chicago, Washington D.C., Monterrey y Chihuahua. Con doble nacionalidad mexicana y estadounidense, Carlos aporta una perspectiva intercultural, con especialización en derecho mexicano, estadounidense y tratados internacionales de comercio e inversión.",
                                 "replica"
                             ); ?>
                         </p>
@@ -260,7 +268,7 @@
                     <div class="col-lg-3 my-auto">
                         <div class="thumb-equipo" data-aos="fade-up"
                         data-aos-duration="1000"
-                        data-aos-delay="300">
+                        data-aos-delay="400">
                             <img
                                 src="<?php echo esc_url(
                                     get_template_directory_uri()
@@ -276,13 +284,20 @@
                     <div class="col-lg-9 my-auto text-justify">
                         <p data-aos="fade-up"
                         data-aos-duration="1000"
-                        data-aos-delay="400">
+                        data-aos-delay="500">
                             <span class="fs-1"><?php _e(
                                 "Natalia",
                                 "replica"
                             ); ?></span>
                             <?php _e(
-                                'es una abogada bilingüe, licenciada en derecho por el Tecnológico de Monterrey, con maestría en valuación de inmuebles y estudios de derecho internacional y teoría de la traducción en la Universidad de Chicago, el Instituto Lorenzo De\' Medici en Italia y la Organización Mexicana de Traductores. Natalia trabajó varios años como abogada litigante y transaccional y también fue profesora de inglés en el Tecnológico de Monterrey. Natalia inició su práctica como traductora profesional en Mexicali, Baja California, y posteriormente lideró lo que ahora es Replica. Habiendo cursado la primaria en California y vivido en diversas ciudades de México y Estados Unidos, Natalia aporta una visión intercultural invaluable a su trabajo.',
+                                'es una abogada bilingüe, licenciada en derecho por el Tecnológico de Monterrey, con maestría en valuación de inmuebles y estudios de derecho internacional y teoría de la traducción en la Universidad de Chicago, el Instituto Lorenzo De\' Medici en Italia y la Organización Mexicana de Traductores. Natalia trabajó varios años como abogada litigante y transaccional y también fue profesora de inglés en el Tecnológico de Monterrey.',
+                                "replica"
+                            ); ?>
+                        </p>
+                        <p data-aos="fade-up"
+                        data-aos-duration="600"
+                            <?php _e(
+                                "Natalia inició su práctica como traductora profesional en Mexicali, Baja California, y posteriormente lideró lo que ahora es Replica. Habiendo cursado la primaria en California y vivido en diversas ciudades de México y Estados Unidos, Natalia aporta una visión intercultural invaluable a su trabajo.",
                                 "replica"
                             ); ?>
                         </p>
