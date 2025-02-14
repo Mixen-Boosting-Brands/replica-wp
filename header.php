@@ -1,3 +1,4 @@
+<?php $currentlang = get_bloginfo("language"); ?>
 <!doctype html>
 <html lang="<?php echo esc_attr(get_bloginfo("language")); ?>">
     <head>
