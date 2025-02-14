@@ -192,7 +192,7 @@
                                     ); ?></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <?php get_language_switcher(); ?>
+                                    <?php echo do_shortcode("[languages]"); ?>
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="#contacto"><?php _e(
@@ -204,7 +204,7 @@
                         </nav>
                         <ul class="d-lg-none list-inline mb-0">
                             <li class="list-inline-item">
-                                <?php get_language_switcher(); ?>
+                                <?php echo do_shortcode("[languages]"); ?>
                             </li>
                             <li class="list-inline-item">
                                 <a
