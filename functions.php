@@ -633,16 +633,10 @@ function bootstrap_pagination(
     }
     return null;
 } // Polylang
-function replica_language_switcher()
+function register_polylang_widget()
 {
-    if (function_exists("pll_the_languages")) {
-        return pll_the_languages([
-            "show_flags" => 1,
-            "show_names" => 0,
-            "hide_current" => 1,
-            "raw" => 0,
-            "echo" => 1,
-        ]);
+    if (class_exists("Polylang")) {
+        register_widget("Polylang_Language_Switcher_Widget");
     }
 }
-add_action("init", "replica_language_switcher", 20);
+add_action("widgets_init", "register_polylang_widget");
