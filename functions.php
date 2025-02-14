@@ -92,6 +92,7 @@ function html5blank_nav()
 }
 
 // Load HTML5 Blank scripts (header.php)
+/*
 function html5blank_header_scripts()
 {
     if ($GLOBALS["pagenow"] != "wp-login.php" && !is_admin()) {
@@ -162,6 +163,7 @@ function html5blank_conditional_scripts()
         wp_enqueue_script("scriptname");
     }
 }
+*/
 
 // Load HTML5 Blank styles
 function html5blank_styles()
