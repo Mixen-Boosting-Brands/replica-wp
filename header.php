@@ -191,7 +191,9 @@
                                         "replica"
                                     ); ?></a>
                                 </li>
-                                <?php if ( function_exists("pll_the_languages"): ?>
+                                <?php if (
+                                    function_exists("pll_the_languages")
+                                ): ?>
                                     <li class="list-inline-item">
                                         <?php pll_the_languages([
                                             "show_flags" => 1,
@@ -209,7 +211,7 @@
                             </ul>
                         </nav>
                         <ul class="d-lg-none list-inline mb-0">
-                            <?php if ( function_exists("pll_the_languages"): ?>
+                            <?php if (function_exists("pll_the_languages")): ?>
                                 <li class="list-inline-item">
                                     <?php pll_the_languages([
                                         "show_flags" => 1,
