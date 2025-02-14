@@ -205,14 +205,27 @@
                                 </li>
                             </ul>
                         </nav>
-                        <a
-                            id="mburger"
-                            class="d-lg-none"
-                            href="javascript:void(0)"
-                            aria-label="<?php esc_attr_e("Menú", "replica"); ?>"
-                        >
-                            <i class="fas fa-bars"></i>
-                        </a>
+                        <ul class="d-lg-none list-inline mb-0">
+                            <li class="list-inline-item">
+                                <?php pll_the_languages([
+                                    "show_flags" => 1,
+                                    "show_names" => 0,
+                                    "hide_current" => 1,
+                                ]); ?>
+                            </li>
+                            <li class="list-inline-item">
+                                <a
+                                    id="mburger"
+                                    href="javascript:void(0)"
+                                    aria-label="<?php esc_attr_e(
+                                        "Menú",
+                                        "replica"
+                                    ); ?>"
+                                >
+                                    <i class="fas fa-bars"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
