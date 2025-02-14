@@ -192,17 +192,7 @@
                                     ); ?></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <?php add_action("pll_init", function () {
-                                        if (
-                                            function_exists("pll_the_languages")
-                                        ) {
-                                            pll_the_languages([
-                                                "show_flags" => 1,
-                                                "show_names" => 0,
-                                                "hide_current" => 1,
-                                            ]);
-                                        }
-                                    }); ?>
+
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="#contacto"><?php _e(
@@ -214,15 +204,7 @@
                         </nav>
                         <ul class="d-lg-none list-inline mb-0">
                             <li class="list-inline-item">
-                                <?php add_action("pll_init", function () {
-                                    if (function_exists("pll_the_languages")) {
-                                        pll_the_languages([
-                                            "show_flags" => 1,
-                                            "show_names" => 0,
-                                            "hide_current" => 1,
-                                        ]);
-                                    }
-                                }); ?>
+
                             </li>
                             <li class="list-inline-item">
                                 <a
