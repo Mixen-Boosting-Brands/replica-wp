@@ -61,7 +61,10 @@ if (function_exists("add_theme_support")) {
     ]);
 
     // Localisation Support.
-    load_theme_textdomain("replica", get_template_directory() . "/languages");
+    load_theme_textdomain(
+        "html5blank",
+        get_template_directory() . "/languages"
+    );
 }
 
 /*------------------------------------*\
