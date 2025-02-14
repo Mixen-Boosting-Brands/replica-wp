@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php
+$currentlang = get_bloginfo("language");
+get_header();
+?>
 
 <section id="jumbotron">
     <div class="container-fluid">

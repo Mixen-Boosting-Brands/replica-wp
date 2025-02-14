@@ -1,3 +1,8 @@
+<?php
+$currentlang = get_bloginfo("language");
+get_header();
+?>
+
 <footer class="text-white">
     <div class="container">
         <div class="row">
