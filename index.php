@@ -295,7 +295,8 @@
                             ); ?>
                         </p>
                         <p data-aos="fade-up"
-                        data-aos-duration="600"
+                        data-aos-duration="1000"
+                        data-aos-delay="600"
                             <?php _e(
                                 "Natalia inició su práctica como traductora profesional en Mexicali, Baja California, y posteriormente lideró lo que ahora es Replica. Habiendo cursado la primaria en California y vivido en diversas ciudades de México y Estados Unidos, Natalia aporta una visión intercultural invaluable a su trabajo.",
                                 "replica"
