@@ -633,3 +633,17 @@ function bootstrap_pagination(
     }
     return null;
 }
+// Polylang hook
+function get_language_switcher()
+{
+    if (function_exists("pll_the_languages")) {
+        return pll_the_languages([
+            "show_flags" => 1,
+            "show_names" => 0,
+            "hide_current" => 1,
+            "raw" => 1, // Importante para retornar el HTML
+        ]);
+    }
+    return "";
+}
+add_action("pll_init", "get_language_switcher");
