@@ -192,12 +192,10 @@
                                     ); ?></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <?php if (
-                                        function_exists(
-                                            "replica_language_switcher"
-                                        )
-                                    ) {
-                                        replica_language_switcher();
+                                    <?php if (class_exists("Polylang")) {
+                                        the_widget(
+                                            "Polylang_Language_Switcher_Widget"
+                                        );
                                     } ?>
                                 </li>
                                 <li class="list-inline-item">
@@ -210,10 +208,10 @@
                         </nav>
                         <ul class="d-lg-none list-inline mb-0">
                             <li class="list-inline-item">
-                                <?php if (
-                                    function_exists("replica_language_switcher")
-                                ) {
-                                    replica_language_switcher();
+                                <?php if (class_exists("Polylang")) {
+                                    the_widget(
+                                        "Polylang_Language_Switcher_Widget"
+                                    );
                                 } ?>
                             </li>
                             <li class="list-inline-item">
