@@ -191,6 +191,13 @@
                                     ); ?></a>
                                 </li>
                                 <li class="list-inline-item">
+                                    <?php pll_the_languages([
+                                        "show_flags" => 1,
+                                        "show_names" => 0,
+                                        "hide_current" => 1,
+                                    ]); ?>
+                                </li>
+                                <li class="list-inline-item">
                                     <a href="#contacto"><?php _e(
                                         "Contacto",
                                         "replica"
