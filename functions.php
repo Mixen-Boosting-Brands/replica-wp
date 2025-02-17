@@ -632,11 +632,4 @@ function bootstrap_pagination(
         }
     }
     return null;
-} // Polylang
-function register_polylang_widget()
-{
-    if (class_exists("Polylang")) {
-        register_widget("Polylang_Language_Switcher_Widget");
-    }
 }
-add_action("widgets_init", "register_polylang_widget");
