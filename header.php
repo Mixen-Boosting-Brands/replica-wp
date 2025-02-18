@@ -191,31 +191,6 @@
                                         "replica"
                                     ); ?></a>
                                 </li>
-                                <li class="list-inline-item">
-                                    <?php if (
-                                        function_exists("pll_the_languages")
-                                    ) {
-                                        pll_the_languages([
-                                            "show_flags" => 1, // Mostrar banderas
-                                            "show_names" => 0, // No mostrar nombres de idiomas
-                                            "hide_current" => 1, // Ocultar idioma actual
-                                            "force_home" => 0, // Los enlaces irán a la página traducida correspondiente
-                                            "echo" => 1, // Imprimir directamente
-                                            "hide_if_empty" => 0, // Mostrar todos los idiomas incluso si no hay traducciones
-                                            "display_names_as" => "slug", // Mostrar el código del idioma (es, en, etc.)
-                                        ]);
-                                    } ?>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#contacto"><?php _e(
-                                        "Contacto",
-                                        "replica"
-                                    ); ?></a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <ul class="d-lg-none list-inline mb-0">
-                            <li class="list-inline-item">
                                 <?php if (
                                     function_exists("pll_the_languages")
                                 ) {
@@ -229,7 +204,26 @@
                                         "display_names_as" => "slug", // Mostrar el código del idioma (es, en, etc.)
                                     ]);
                                 } ?>
-                            </li>
+                                <li class="list-inline-item">
+                                    <a href="#contacto"><?php _e(
+                                        "Contacto",
+                                        "replica"
+                                    ); ?></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ul class="d-lg-none list-inline mb-0">
+                            <?php if (function_exists("pll_the_languages")) {
+                                pll_the_languages([
+                                    "show_flags" => 1, // Mostrar banderas
+                                    "show_names" => 0, // No mostrar nombres de idiomas
+                                    "hide_current" => 1, // Ocultar idioma actual
+                                    "force_home" => 0, // Los enlaces irán a la página traducida correspondiente
+                                    "echo" => 1, // Imprimir directamente
+                                    "hide_if_empty" => 0, // Mostrar todos los idiomas incluso si no hay traducciones
+                                    "display_names_as" => "slug", // Mostrar el código del idioma (es, en, etc.)
+                                ]);
+                            } ?>
                             <li class="list-inline-item">
                                 <a
                                     id="mburger"
