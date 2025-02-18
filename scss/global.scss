@@ -141,6 +141,10 @@ hr {
     @include whatsapp-button;
 }
 
+.lang-item {
+    display: inline-block;
+}
+
 header {
     background-color: $primary;
     width: 100%;
