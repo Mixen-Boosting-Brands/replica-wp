@@ -224,7 +224,7 @@
                                     "display_names_as" => "slug", // Mostrar el código del idioma (es, en, etc.)
                                 ]);
                             } ?>
-                            <li class="list-inline-item">
+                            <li class="list-inline-item ms-3">
                                 <a
                                     id="mburger"
                                     href="javascript:void(0)"
