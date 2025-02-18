@@ -632,4 +632,14 @@ function bootstrap_pagination(
         }
     }
     return null;
-}
+} // Polylang
+add_action("after_setup_theme", function () {
+    // Registrar soporte para Polylang
+    if (function_exists("pll_register_string")) {
+        pll_register_string(
+            "replica-theme",
+            "Language Switcher",
+            "Replica Theme"
+        );
+    }
+});

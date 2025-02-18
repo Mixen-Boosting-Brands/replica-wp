@@ -196,10 +196,13 @@
                                         function_exists("pll_the_languages")
                                     ) {
                                         pll_the_languages([
-                                            "show_flags" => 1,
-                                            "show_names" => 0,
-                                            "hide_current" => 1,
-                                            "echo" => 1,
+                                            "show_flags" => 1, // Mostrar banderas
+                                            "show_names" => 0, // No mostrar nombres de idiomas
+                                            "hide_current" => 1, // Ocultar idioma actual
+                                            "force_home" => 0, // Los enlaces irán a la página traducida correspondiente
+                                            "echo" => 1, // Imprimir directamente
+                                            "hide_if_empty" => 0, // Mostrar todos los idiomas incluso si no hay traducciones
+                                            "display_names_as" => "slug", // Mostrar el código del idioma (es, en, etc.)
                                         ]);
                                     } ?>
                                 </li>
@@ -217,10 +220,13 @@
                                     function_exists("pll_the_languages")
                                 ) {
                                     pll_the_languages([
-                                        "show_flags" => 1,
-                                        "show_names" => 0,
-                                        "hide_current" => 1,
-                                        "echo" => 1,
+                                        "show_flags" => 1, // Mostrar banderas
+                                        "show_names" => 0, // No mostrar nombres de idiomas
+                                        "hide_current" => 1, // Ocultar idioma actual
+                                        "force_home" => 0, // Los enlaces irán a la página traducida correspondiente
+                                        "echo" => 1, // Imprimir directamente
+                                        "hide_if_empty" => 0, // Mostrar todos los idiomas incluso si no hay traducciones
+                                        "display_names_as" => "slug", // Mostrar el código del idioma (es, en, etc.)
                                     ]);
                                 } ?>
                             </li>
