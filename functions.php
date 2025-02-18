@@ -643,3 +643,14 @@ add_action("after_setup_theme", function () {
         );
     }
 });
+add_filter("pll_get_language_items", function ($items) {
+    foreach ($items as &$item) {
+        // Agrega la clase list-inline-item manteniendo las clases existentes
+        $item = str_replace(
+            '<li class="',
+            '<li class="list-inline-item ',
+            $item
+        );
+    }
+    return $items;
+});
