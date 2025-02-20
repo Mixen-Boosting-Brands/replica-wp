@@ -1043,7 +1043,9 @@ get_header();
                     <div id="form-messages"></div>
 
                     <form
-                        action="./mailer.php"
+                        action="<?php echo esc_url(
+                            get_template_directory_uri()
+                        ); ?>/mailer.php"
                         method="POST"
                         class="row g-3 needs-validation contact-form mb-4 mb-lg-0"
                         id="ajax-contact"

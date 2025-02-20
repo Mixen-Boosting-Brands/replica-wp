@@ -653,4 +653,48 @@ add_filter("pll_get_language_items", function ($items) {
         );
     }
     return $items;
-});
+}); // Mailer.php translation
+if (function_exists("pll_register_string")) {
+    // Register strings for translation
+    pll_register_string(
+        "mailer",
+        "Gracias por contactarnos. Nos pondremos en contacto contigo a la brevedad.",
+        "Form Messages"
+    );
+    pll_register_string(
+        "mailer",
+        "Lo sentimos, algo salió mal. Por favor, inténtalo de nuevo.",
+        "Form Messages"
+    );
+    pll_register_string(
+        "mailer",
+        "Por favor, complete todos los campos requeridos.",
+        "Form Messages"
+    );
+    pll_register_string(
+        "mailer",
+        "El archivo es demasiado grande. Máximo 10MB.",
+        "Form Messages"
+    );
+    pll_register_string(
+        "mailer",
+        "Tipo de archivo no permitido. Solo se permiten archivos .doc y .pdf",
+        "Form Messages"
+    );
+    pll_register_string(
+        "mailer",
+        "Nueva solicitud de traducción de",
+        "Form Messages"
+    );
+    pll_register_string(
+        "mailer",
+        "Información del solicitante",
+        "Form Messages"
+    );
+    pll_register_string(
+        "mailer",
+        "Información de la traducción",
+        "Form Messages"
+    );
+    pll_register_string("mailer", "Comentarios", "Form Messages"); // Add more strings as needed
+}
