@@ -33,10 +33,10 @@ $mail->CharSet = "UTF-8";
 
 //Server settings
 $mail->isSMTP();
-$mail->Host = "smtp.hostinger.com"; // Your SMTP host
+$mail->Host = "smtp.gmail.com"; // Google SMTP server
 $mail->SMTPAuth = true;
-$mail->Username = "noreply@yourdomain.com"; // Your SMTP username
-$mail->Password = "your-smtp-password"; // Your SMTP password
+$mail->Username = "your-email@yourdomain.com"; // Your Google Workspace email
+$mail->Password = "your-app-password"; // Google App Password (not your regular email password)
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
@@ -56,8 +56,8 @@ if (isset($_POST["nombre"]) && isset($_POST["correo"])) {
 
     try {
         //Recipients
-        $mail->setFrom("noreply@yourdomain.com", "Translation Service");
-        $mail->addAddress("your-email@domain.com"); // Where to receive the form submissions
+        $mail->setFrom("noreply@yourdomain.com", "Replica Legal Translation");
+        $mail->addAddress("luis.pando@mixen.mx"); // Where to receive the form submissions
         $mail->addReplyTo($correo, $nombre);
 
         // Handle file uploads
