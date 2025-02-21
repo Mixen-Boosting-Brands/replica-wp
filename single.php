@@ -26,7 +26,7 @@
                             <li class="list-inline-item">
                                 <span class="author"><?php esc_html_e(
                                     "Por",
-                                    "html5blank"
+                                    "replica"
                                 ); ?> <?php the_author_posts_link(); ?></span>
                             </li>
                             <li class="list-inline-item">
@@ -41,9 +41,9 @@
                                     comments_open(get_the_ID())
                                 ) {
                                     comments_popup_link(
-                                        __("Leave your thoughts", "html5blank"),
-                                        __("1 Comment", "html5blank"),
-                                        __("% Comments", "html5blank")
+                                        __("Leave your thoughts", "replica"),
+                                        __("1 Comment", "replica"),
+                                        __("% Comments", "replica")
                                     );
                                 } ?></span>
                             </li>
