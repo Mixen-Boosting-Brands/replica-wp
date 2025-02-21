@@ -16,7 +16,9 @@
                     <h3 class="card-title"><?php the_title(); ?></h3>
                 </a>
                 <!-- p class="card-text">< get_the_excerpt(); ></p -->
-                <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-lg rounded-pill">Leer más</a>
+                <a href="<?php the_permalink(); ?>" class="btn btn-primary btn-lg rounded-pill">
+                    <?php _e("Leer más", "replica"); ?>
+                </a>
             </div>
         </div>
     </div>
