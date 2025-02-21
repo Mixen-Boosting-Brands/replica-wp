@@ -1,96 +1,104 @@
 "use strict";
-window.addEventListener("load", function () {
-    // Get the messages div.
-    var formMessages = $("#form-messages");
+window.addEventListener(
+    "load",
+    function () {
+        // Get the messages div.
+        var formMessages = $("#form-messages");
 
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName("needs-validation");
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function (form) {
-        form.addEventListener(
-            "submit",
-            function (event) {
-                event.preventDefault();
-
-                if (form.checkValidity() === false) {
-                    event.stopPropagation();
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName("needs-validation");
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener(
+                "submit",
+                function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
                     form.classList.add("was-validated");
-                    return;
-                }
 
-                // Create FormData object to handle file uploads and form data
-                var formData = new FormData(form);
+                    if (form.checkValidity() === true) {
+                        event.preventDefault();
 
-                // Submit the form using AJAX
-                $.ajax({
-                    type: "POST",
-                    url: $(form).attr("action"),
-                    data: formData,
-                    processData: false, // Don't process the data
-                    contentType: false, // Don't set content type
-                    cache: false, // Don't cache
-                    beforeSend: function () {
-                        // Show loading indicator
-                        $("#hold-on-a-sec").addClass("is-loading");
-                    },
-                    success: function (response) {
-                        // Handle success
-                        $(form).removeClass("was-validated");
-                        $(formMessages).removeClass("error");
-                        $(formMessages).addClass("success");
+                        // To reset the appearance of the form
+                        form.classList.remove("was-validated");
 
-                        // Set the message text
-                        $(formMessages).text(response);
-                        console.log(response);
+                        // Submit the form using AJAX
+                        $.ajax({
+                            type: $(form).attr("method"),
+                            url: $(form).attr("action"),
+                            data: new FormData(form),
+                            processData: false,
+                            contentType: false,
+                            beforeSend: function () {
+                                // Let's show a message to the user
+                                $("#hold-on-a-sec").addClass("is-loading");
+                            },
+                            success: function (response) {
+                                // Parse the JSON response if it's a string
+                                const result =
+                                    typeof response === "string"
+                                        ? JSON.parse(response)
+                                        : response;
 
-                        // Clear the form after 5 seconds
-                        setTimeout(function () {
-                            $(formMessages).remove();
+                                // Make sure that the formMessages div has the 'success' class.
+                                $(form).removeClass("was-validated");
+                                $(formMessages).removeClass("error");
+                                $(formMessages).addClass("success");
 
-                            // Clear all form fields
-                            $("#nombre").val("");
-                            $("#correo").val("");
-                            $("#telefono").val("");
-                            $("#idioma-nativo").val("");
-                            $("#idioma-meta").val("");
-                            $("#userfile").val("");
-                            $("#fecha-entrega").val("");
-                            $("#comentarios").val("");
+                                // Set the message text.
+                                $(formMessages).text(result.message);
 
-                            // Reset file input
-                            form.reset();
-                        }, 5000);
-                    },
-                    error: function (xhr, status, error) {
-                        // Handle error
-                        $("#hold-on-a-sec").removeClass("is-loading");
-                        $(formMessages).removeClass("success");
-                        $(formMessages).addClass("error");
+                                setTimeout(function () {
+                                    $(formMessages).remove();
 
-                        // Set error message
-                        if (xhr.responseText) {
-                            $(formMessages).text(xhr.responseText);
-                        } else {
-                            $(formMessages).text(
-                                "Lo sentimos, ha ocurrido un error. Por favor, inténtelo de nuevo."
-                            );
-                        }
+                                    // Clear the form.
+                                    $("#nombre").val("");
+                                    $("#telefono").val("");
+                                    $("#correo").val("");
+                                    $("#idioma-nativo").val("");
+                                    $("#idioma-meta").val("");
+                                    $("#userfile").val("");
+                                    $("#fecha-entrega").val("");
+                                    $("#comentarios").val("");
+                                }, 5000);
+                            },
+                            error: function (xhr, status, error) {
+                                // Make sure that the formMessages div has the 'error' class.
+                                $("#hold-on-a-sec").removeClass("is-loading");
+                                $(formMessages).removeClass("success");
+                                $(formMessages).addClass("error");
 
-                        console.error("Error:", status, error);
+                                // Parse the JSON response if it's a string
+                                let errorMessage;
+                                try {
+                                    const result =
+                                        typeof xhr.responseText === "string"
+                                            ? JSON.parse(xhr.responseText)
+                                            : xhr.responseText;
+                                    errorMessage = result.message;
+                                } catch (e) {
+                                    errorMessage =
+                                        "Lo sentimos, ha ocurrido un error. Por favor, inténtelo de nuevo.";
+                                }
 
-                        // Clear form after 5 seconds
-                        setTimeout(function () {
-                            $(formMessages).remove();
-                            form.reset();
-                        }, 5000);
-                    },
-                    complete: function () {
-                        // Hide loading indicator
-                        $("#hold-on-a-sec").removeClass("is-loading");
-                    },
-                });
-            },
-            false
-        );
-    });
-});
+                                // Set the message text.
+                                $(formMessages).text(errorMessage);
+
+                                setTimeout(function () {
+                                    $(formMessages).remove();
+                                }, 5000);
+                            },
+                            complete: function () {
+                                $("#hold-on-a-sec").removeClass("is-loading");
+                            },
+                        });
+                    }
+                },
+                false
+            );
+        });
+    },
+    false
+);
