@@ -6,8 +6,8 @@
             <div class="col text-center">
                 <h1>
                     <span class="fw-bold"><?php
-                    esc_html_e("Posts de ", "replica");
-                    echo get_the_author();
+                    esc_html_e("Posts de", "replica");
+                    echo " " . get_the_author();
                     ?></span>
                 </h1>
             </div>
