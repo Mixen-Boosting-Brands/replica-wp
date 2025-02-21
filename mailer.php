@@ -56,7 +56,7 @@ if (isset($_POST["nombre"]) && isset($_POST["correo"])) {
 
     try {
         //Recipients
-        $mail->setFrom("noreply@yourdomain.com", "Replica Legal Translation");
+        $mail->setFrom("noreply@replicalt.com", "Replica Legal Translation");
         $mail->addAddress("luis.pando@mixen.mx"); // Where to receive the form submissions
         $mail->addReplyTo($correo, $nombre);
 
