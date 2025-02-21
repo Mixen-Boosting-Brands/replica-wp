@@ -9,13 +9,13 @@
             <div class="row">
                 <div class="col-12">
                     <article>
-                        <div class="thumbnail text-center w-100 mb-4">
+                        <!-- div class="thumbnail text-center w-100 mb-4">
                             <?php if (has_post_thumbnail()): ?>
                                 <?php the_post_thumbnail("large", [
                                     "class" => "img-fluid rounded",
                                 ]); ?>
                             <?php endif; ?>
-                        </div>
+                        </div -->
 
                         <h1>
                             <?php the_title(); ?>
