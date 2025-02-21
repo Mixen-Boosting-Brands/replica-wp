@@ -33,10 +33,10 @@ $mail->CharSet = "UTF-8";
 
 //Server settings
 $mail->isSMTP();
-$mail->Host = "smtp.gmail.com"; // Google SMTP server
+$mail->Host = "smtp.hostinger.com";
 $mail->SMTPAuth = true;
-$mail->Username = "your-email@yourdomain.com"; // Your Google Workspace email
-$mail->Password = "your-app-password"; // Google App Password (not your regular email password)
+$mail->Username = "noreply@replicalt.com"; // Your main domain
+$mail->Password = "eFE8bt@jsuX8";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
