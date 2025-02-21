@@ -57,7 +57,7 @@ if (isset($_POST["nombre"]) && isset($_POST["correo"])) {
     try {
         //Recipients
         $mail->setFrom("noreply@replicalt.com", "Replica Legal Translation");
-        $mail->addAddress("luis.pando@mixen.mx");
+        $mail->addAddress("natalia@replicalt.com");
         $mail->addReplyTo($correo, $nombre);
 
         // Handle file uploads
