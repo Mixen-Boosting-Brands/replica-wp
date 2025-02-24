@@ -216,7 +216,9 @@ get_header();
             <div class="col-lg-8">
                 <div class="row">
                     <div class="col-lg-3 offset-lg-1 my-auto">
-                        <div class="thumb-equipo" data-aos="fade-up"
+                        <div class="<?php if (
+                            $currentlang == "en-US"
+                        ): ?>thumb-equipo-en<?php else: ?>thumb-equipo-es<?php endif; ?>" data-aos="fade-up"
                         data-aos-duration="1000"
                         data-aos-delay="100">
                             <img
@@ -269,7 +271,9 @@ get_header();
             <div class="col-lg-8 offset-lg-4">
                 <div class="row">
                     <div class="col-lg-3 my-auto">
-                        <div class="thumb-equipo" data-aos="fade-up"
+                        <div class="<?php if (
+                            $currentlang == "en-US"
+                        ): ?>thumb-equipo-en<?php else: ?>thumb-equipo-es<?php endif; ?>" data-aos="fade-up"
                         data-aos-duration="1000"
                         data-aos-delay="400">
                             <img

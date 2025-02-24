@@ -343,10 +343,10 @@ header {
 #equipo-1 {
     margin-bottom: 60px;
 
-    .thumb-equipo {
+    .thumb-equipo-es {
         &::before {
             @include background(
-                "../images/equipo/before-1.png",
+                "../images/equipo/before-1-es.png",
                 center,
                 contain
             );
@@ -354,7 +354,25 @@ header {
 
         &::after {
             @include background(
-                "../images/equipo/after-1.png",
+                "../images/equipo/after-1-es.png",
+                center,
+                contain
+            );
+        }
+    }
+
+    .thumb-equipo-en {
+        &::before {
+            @include background(
+                "../images/equipo/before-1-en.png",
+                center,
+                contain
+            );
+        }
+
+        &::after {
+            @include background(
+                "../images/equipo/after-1-es.png",
                 center,
                 contain
             );
@@ -363,10 +381,10 @@ header {
 }
 
 #equipo-2 {
-    .thumb-equipo {
+    .thumb-equipo-es {
         &::before {
             @include background(
-                "../images/equipo/before-2.png",
+                "../images/equipo/before-2-es.png",
                 center,
                 contain
             );
@@ -374,7 +392,25 @@ header {
 
         &::after {
             @include background(
-                "../images/equipo/after-2.png",
+                "../images/equipo/after-2-es.png",
+                center,
+                contain
+            );
+        }
+    }
+
+    .thumb-equipo-en {
+        &::before {
+            @include background(
+                "../images/equipo/before-2-en.png",
+                center,
+                contain
+            );
+        }
+
+        &::after {
+            @include background(
+                "../images/equipo/after-2-en.png",
                 center,
                 contain
             );
