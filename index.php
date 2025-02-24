@@ -354,7 +354,7 @@ get_header();
                                 get_template_directory_uri()
                             ); ?>/assets/images/certificados/logo-pjf.png"
                             alt="<?php esc_attr_e("Logo PJF", "replica"); ?>"
-                            class="logo img-fluid mb-4 mb-lg-0"
+                            class="logo img-fluid mb-4 mb-lg-0 ms-lg-4"
                             data-aos="fade-up"
                             data-aos-duration="1000"
                             data-aos-delay="200"
