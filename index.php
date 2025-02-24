@@ -42,7 +42,7 @@ get_header();
                     data-aos="fade-in"
                     data-aos-duration="1000"
                     data-aos-delay="900"
-                    data-aos-offset="400"
+                    data-aos-offset="0"
                 />
             </div>
         </div>
