@@ -169,6 +169,7 @@ header {
 
     nav {
         position: relative;
+        text-transform: capitalize;
     }
 
     #mburger {
@@ -372,7 +373,7 @@ header {
 
         &::after {
             @include background(
-                "../images/equipo/after-1-es.png",
+                "../images/equipo/after-1-en.png",
                 center,
                 contain
             );
