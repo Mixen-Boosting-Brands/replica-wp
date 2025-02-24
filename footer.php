@@ -76,7 +76,7 @@ get_header();
                         <ul class="list-unstyled mb-5">
                             <li>
                                 <?php _e("México:", "replica"); ?>
-                                <a href="tel:+526144273410">
+                                <a href="https://wa.link/m4joj8" target="_blank">
                                     <?php _e(
                                         "+52 614 427 3410 (con WhatsApp)",
                                         "replica"
@@ -85,9 +85,9 @@ get_header();
                             </li>
                             <li>
                                 <?php _e("EE.UU.:", "replica"); ?>
-                                <a href="tel:+18728997407">
+                                <a href="tel:+12024153601">
                                     <?php _e(
-                                        "+1 872 899 7407 (con mensajes de texto)",
+                                        "+1 202 415 3061 (con mensajes de texto)",
                                         "replica"
                                     ); ?>
                                 </a>

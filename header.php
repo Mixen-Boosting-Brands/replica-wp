@@ -195,8 +195,8 @@
                                     function_exists("pll_the_languages")
                                 ) {
                                     pll_the_languages([
-                                        "show_flags" => 1, // Mostrar banderas
-                                        "show_names" => 0, // No mostrar nombres de idiomas
+                                        "show_flags" => 0, // Mostrar banderas
+                                        "show_names" => 1, // No mostrar nombres de idiomas
                                         "hide_current" => 1, // Ocultar idioma actual
                                         "force_home" => 0, // Los enlaces irán a la página traducida correspondiente
                                         "echo" => 1, // Imprimir directamente
@@ -215,8 +215,8 @@
                         <ul class="d-lg-none list-inline mb-0">
                             <?php if (function_exists("pll_the_languages")) {
                                 pll_the_languages([
-                                    "show_flags" => 1, // Mostrar banderas
-                                    "show_names" => 0, // No mostrar nombres de idiomas
+                                    "show_flags" => 0, // Mostrar banderas
+                                    "show_names" => 1, // No mostrar nombres de idiomas
                                     "hide_current" => 1, // Ocultar idioma actual
                                     "force_home" => 0, // Los enlaces irán a la página traducida correspondiente
                                     "echo" => 1, // Imprimir directamente

@@ -36,17 +36,6 @@
                            					<?php the_date(); ?> <?php the_time(); ?>
                             				</time>
                             </li>
-                            <li class="list-inline-item">
-                                <span class="comments"><?php if (
-                                    comments_open(get_the_ID())
-                                ) {
-                                    comments_popup_link(
-                                        __("Leave your thoughts", "replica"),
-                                        __("1 Comment", "replica"),
-                                        __("% Comments", "replica")
-                                    );
-                                } ?></span>
-                            </li>
                         </ul>
              			<!-- /post details -->
 
@@ -57,8 +46,6 @@
              			<?php edit_post_link();
         // Always handy to have Edit Post Links available.
         ?>
-
-             			<?php comments_template(); ?>
                     </article>
                 </div>
             </div>
