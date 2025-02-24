@@ -201,7 +201,7 @@
                                         "force_home" => 0, // Los enlaces irán a la página traducida correspondiente
                                         "echo" => 1, // Imprimir directamente
                                         "hide_if_empty" => 0, // Mostrar todos los idiomas incluso si no hay traducciones
-                                        "display_names_as" => "slug", // Mostrar el código del idioma (es, en, etc.)
+                                        "display_names_as" => "name", // Muestra el nombre completo en lugar del código
                                     ]);
                                 } ?>
                                 <li class="list-inline-item">
@@ -221,7 +221,7 @@
                                     "force_home" => 0, // Los enlaces irán a la página traducida correspondiente
                                     "echo" => 1, // Imprimir directamente
                                     "hide_if_empty" => 0, // Mostrar todos los idiomas incluso si no hay traducciones
-                                    "display_names_as" => "slug", // Mostrar el código del idioma (es, en, etc.)
+                                    "display_names_as" => "name", // Muestra el nombre completo en lugar del código
                                 ]);
                             } ?>
                             <li class="list-inline-item ms-3">
