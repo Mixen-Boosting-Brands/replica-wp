@@ -1367,9 +1367,6 @@ get_header();
                     get_category_link(get_cat_ID("blog"))
                 ); ?>"
                     class="btn btn-lg btn-outline-light rounded-pill"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200">
                     <?php _e("Ver más", "replica"); ?>
                 </a>
             </div>
