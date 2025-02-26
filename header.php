@@ -77,34 +77,56 @@
                 <nav>
                     <ul id="navmenu" class="list-unstyled mb-0">
                         <li>
-                            <a class="anchor" id="btn-nav-1" href="#nosotros"><?php _e(
-                                "Nosotros",
-                                "replica"
-                            ); ?></a>
+                            <a class="anchor" id="btn-nav-1" href="<?php echo esc_url(
+                                home_url()
+                            ); ?>"><?php _e("Inicio", "replica"); ?></a>
                         </li>
                         <li>
-                            <a class="anchor" id="btn-nav-2" href="#equipo-1"><?php _e(
-                                "Equipo",
-                                "replica"
-                            ); ?></a>
+                            <a class="anchor" id="btn-nav-2" href="<?php if (
+                                !is_home()
+                            ):
+                                echo esc_url(home_url());
+                            endif; ?>#nosotros"><?php _e(
+    "Nosotros",
+    "replica"
+); ?></a>
                         </li>
                         <li>
-                            <a class="anchor" id="btn-nav-3" href="#certificados"><?php _e(
-                                "Certificaciones",
-                                "replica"
-                            ); ?></a>
+                            <a class="anchor" id="btn-nav-3" href="<?php if (
+                                !is_home()
+                            ):
+                                echo esc_url(home_url());
+                            endif; ?>#equipo-1"><?php _e(
+    "Equipo",
+    "replica"
+); ?></a>
                         </li>
                         <li>
-                            <a class="anchor" id="btn-nav-4" href="#servicios"><?php _e(
-                                "Servicios",
-                                "replica"
-                            ); ?></a>
+                            <a class="anchor" id="btn-nav-4" href="<?php if (
+                                !is_home()
+                            ):
+                                echo esc_url(home_url());
+                            endif; ?>#certificados"><?php _e(
+    "Certificaciones",
+    "replica"
+); ?></a>
                         </li>
                         <li>
-                            <a class="anchor" id="btn-nav-5" href="#blog"><?php _e(
-                                "Blog",
-                                "replica"
-                            ); ?></a>
+                            <a class="anchor" id="btn-nav-5" href="<?php if (
+                                !is_home()
+                            ):
+                                echo esc_url(home_url());
+                            endif; ?>#servicios"><?php _e(
+    "Servicios",
+    "replica"
+); ?></a>
+                        </li>
+                        <li>
+                            <a class="anchor" id="btn-nav-6" href="<?php if (
+                                !is_home()
+                            ):
+                                echo esc_url(home_url());
+                            endif; ?>#blog"><?php _e("Blog", "replica"); ?></a>
                         </li>
                     </ul>
                 </nav>
@@ -162,34 +184,49 @@
                         <nav class="d-none d-lg-block">
                             <ul class="list-inline mb-0">
                                 <li class="list-inline-item">
-                                    <a href="#nosotros"><?php _e(
-                                        "Nosotros",
-                                        "replica"
-                                    ); ?></a>
+                                    <a href="<?php echo esc_url(
+                                        home_url()
+                                    ); ?>"><?php _e("Inicio", "replica"); ?></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#equipo-1"><?php _e(
-                                        "Nuestro equipo",
-                                        "replica"
-                                    ); ?></a>
+                                    <a href="<?php if (!is_home()):
+                                        echo esc_url(home_url());
+                                    endif; ?>#nosotros"><?php _e(
+    "Nosotros",
+    "replica"
+); ?></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#certificados"><?php _e(
-                                        "Certificaciones",
-                                        "replica"
-                                    ); ?></a>
+                                    <a href="<?php if (!is_home()):
+                                        echo esc_url(home_url());
+                                    endif; ?>#equipo-1"><?php _e(
+    "Nuestro equipo",
+    "replica"
+); ?></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#servicios"><?php _e(
-                                        "Servicios",
-                                        "replica"
-                                    ); ?></a>
+                                    <a href="<?php if (!is_home()):
+                                        echo esc_url(home_url());
+                                    endif; ?>#certificados"><?php _e(
+    "Certificaciones",
+    "replica"
+); ?></a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#blog"><?php _e(
-                                        "Blog",
-                                        "replica"
-                                    ); ?></a>
+                                    <a href="<?php if (!is_home()):
+                                        echo esc_url(home_url());
+                                    endif; ?>#servicios"><?php _e(
+    "Servicios",
+    "replica"
+); ?></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="<?php if (!is_home()):
+                                        echo esc_url(home_url());
+                                    endif; ?>#blog"><?php _e(
+    "Blog",
+    "replica"
+); ?></a>
                                 </li>
                                 <?php if (
                                     function_exists("pll_the_languages")
