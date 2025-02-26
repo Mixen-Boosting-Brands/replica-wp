@@ -77,12 +77,7 @@
                 <nav>
                     <ul id="navmenu" class="list-unstyled mb-0">
                         <li>
-                            <a class="anchor" id="btn-nav-1" href="<?php echo esc_url(
-                                home_url()
-                            ); ?>"><?php _e("Inicio", "replica"); ?></a>
-                        </li>
-                        <li>
-                            <a class="anchor" id="btn-nav-2" href="<?php if (
+                            <a class="anchor" id="btn-nav-1" href="<?php if (
                                 !is_home()
                             ):
                                 echo esc_url(home_url());
@@ -92,7 +87,7 @@
 ); ?></a>
                         </li>
                         <li>
-                            <a class="anchor" id="btn-nav-3" href="<?php if (
+                            <a class="anchor" id="btn-nav-2" href="<?php if (
                                 !is_home()
                             ):
                                 echo esc_url(home_url());
@@ -102,7 +97,7 @@
 ); ?></a>
                         </li>
                         <li>
-                            <a class="anchor" id="btn-nav-4" href="<?php if (
+                            <a class="anchor" id="btn-nav-3" href="<?php if (
                                 !is_home()
                             ):
                                 echo esc_url(home_url());
@@ -112,7 +107,7 @@
 ); ?></a>
                         </li>
                         <li>
-                            <a class="anchor" id="btn-nav-5" href="<?php if (
+                            <a class="anchor" id="btn-nav-4" href="<?php if (
                                 !is_home()
                             ):
                                 echo esc_url(home_url());
@@ -122,7 +117,7 @@
 ); ?></a>
                         </li>
                         <li>
-                            <a class="anchor" id="btn-nav-6" href="<?php if (
+                            <a class="anchor" id="btn-nav-5" href="<?php if (
                                 !is_home()
                             ):
                                 echo esc_url(home_url());
@@ -183,11 +178,6 @@
                     <div class="col-6 col-lg-10 my-auto text-end">
                         <nav class="d-none d-lg-block">
                             <ul class="list-inline mb-0">
-                                <li class="list-inline-item">
-                                    <a href="<?php echo esc_url(
-                                        home_url()
-                                    ); ?>"><?php _e("Inicio", "replica"); ?></a>
-                                </li>
                                 <li class="list-inline-item">
                                     <a href="<?php if (!is_home()):
                                         echo esc_url(home_url());
