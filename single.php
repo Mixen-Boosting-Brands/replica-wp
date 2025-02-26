@@ -57,7 +57,7 @@
             <div class="col-12 text-center">
                 <a href="<?php echo esc_url(
                     home_url()
-                ); ?>" class="btn btn-primary btn-lg">
+                ); ?>" class="btn btn-primary btn-lg rounded-pill">
                     <i class="fa-solid fa-house"></i> <span class="author"><?php esc_html_e(
                         "Volver al inicio",
                         "replica"

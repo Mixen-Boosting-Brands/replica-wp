@@ -1366,7 +1366,7 @@ get_header();
                 <a href="<?php echo esc_url(
                     get_category_link(get_cat_ID("blog"))
                 ); ?>"
-                    class="btn btn-lg btn-outline-light rounded-pill">
+                    class="btn btn-lg btn-primary rounded-pill">
                     <?php _e("Ver más", "replica"); ?>
                 </a>
             </div>
