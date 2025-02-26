@@ -18,4 +18,19 @@
     </div>
 </section>
 
+<section class="py-60">
+    <div class="row">
+        <div class="col-12 text-center">
+            <a href="<?php echo esc_url(
+                home_url()
+            ); ?>" class="btn btn-primary btn-lg rounded-pill">
+                <i class="fa-solid fa-house"></i> <span class="author"><?php esc_html_e(
+                    "Volver al inicio",
+                    "replica"
+                ); ?>
+            </a>
+        </div>
+    </div>
+</section>
+
 <?php get_footer(); ?>
