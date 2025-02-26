@@ -144,7 +144,7 @@
             );
             width: 625px;
             height: 448px;
-            left: -400px;
+            left: -320px;
         }
     }
 }
@@ -207,7 +207,7 @@
         .decor {
             width: 625px;
             height: 448px;
-            left: -334;
+            left: -300px;
         }
     }
 }
@@ -227,6 +227,22 @@
                 width: 232px;
                 height: 56px;
             }
+        }
+    }
+
+    #equipo-1 {
+        .decor {
+            width: 552px;
+            height: 582px;
+            right: -86px;
+        }
+    }
+
+    #equipo-2 {
+        .decor {
+            width: 625px;
+            height: 448px;
+            left: -3258px;
         }
     }
 }
