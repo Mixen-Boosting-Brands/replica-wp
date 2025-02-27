@@ -111,7 +111,7 @@ get_header();
         <div class="row">
             <div class="col text-center">
                 <ul class="social list-inline mb-5">
-                    <li class="list-inline-item">
+                    <!-- li class="list-inline-item">
                         <a href="https://facebook.com/" target="_blank" aria-label="<?php esc_attr_e(
                             "Facebook",
                             "replica"
@@ -126,9 +126,9 @@ get_header();
                         ); ?>">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
-                    </li>
+                    </li -->
                     <li class="list-inline-item">
-                        <a href="https://linkedin.com/" target="_blank" aria-label="<?php esc_attr_e(
+                        <a href="https://www.linkedin.com/company/replica-legal-translation/" target="_blank" aria-label="<?php esc_attr_e(
                             "LinkedIn",
                             "replica"
                         ); ?>">
