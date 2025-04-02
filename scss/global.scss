@@ -250,7 +250,7 @@ header {
 
 .customers {
     &::before {
-        content: "Our Customers";
+        content: "Our Customers" !important;
     }
 }
 
