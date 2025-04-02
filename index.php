@@ -49,6 +49,89 @@ get_header();
     </div>
 </section>
 
+<section id="clientes" class="<?php if (
+    $currentlang == "en-US"
+): ?>customers<?php endif; ?> text-white py-60">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <!-- Slider main container -->
+                <div class="swiper swiper-clientes" data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="0">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img
+                                src="<?php echo esc_url(
+                                    get_template_directory_uri()
+                                ); ?>/assets/images/clientes/1.png"
+                                alt=""
+                                class="img-fluid"
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="<?php echo esc_url(
+                                    get_template_directory_uri()
+                                ); ?>/assets/images/clientes/2.png"
+                                alt=""
+                                class="img-fluid"
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="<?php echo esc_url(
+                                    get_template_directory_uri()
+                                ); ?>/assets/images/clientes/3.png"
+                                alt=""
+                                class="img-fluid"
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="<?php echo esc_url(
+                                    get_template_directory_uri()
+                                ); ?>/assets/images/clientes/4.png"
+                                alt=""
+                                class="img-fluid"
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="<?php echo esc_url(
+                                    get_template_directory_uri()
+                                ); ?>/assets/images/clientes/5.png"
+                                alt=""
+                                class="img-fluid"
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="<?php echo esc_url(
+                                    get_template_directory_uri()
+                                ); ?>/assets/images/clientes/6.png"
+                                alt=""
+                                class="img-fluid"
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="<?php echo esc_url(
+                                    get_template_directory_uri()
+                                ); ?>/assets/images/clientes/7.png"
+                                alt=""
+                                class="img-fluid"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="nosotros" class="text-white">
     <div class="container">
         <div class="row">

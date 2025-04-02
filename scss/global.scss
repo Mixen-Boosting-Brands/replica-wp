@@ -248,6 +248,12 @@ header {
     }
 }
 
+.customers {
+    &::before {
+        content: "Our Customers";
+    }
+}
+
 #nosotros {
     @include background("../images/bg-nosotros.png", right top, cover);
     @include font-size(1.2rem);
