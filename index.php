@@ -51,7 +51,7 @@ get_header();
 
 <section id="clientes" class="<?php if (
     $currentlang == "en-US"
-): ?>customers<?php endif; ?> text-white py-60">
+): ?>clients<?php endif; ?> text-white py-60">
     <div class="container-fluid">
         <div class="row">
             <div class="col">
