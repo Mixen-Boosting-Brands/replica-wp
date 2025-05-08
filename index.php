@@ -1120,8 +1120,12 @@ get_header();
         </div>
         <div class="row">
             <div class="col-12 col-lg-8 offset-lg-2">
-                <script src="https://js.hsforms.net/forms/embed/49584662.js" defer></script>
-                <div class="hs-form-frame" data-region="na1" data-form-id="b0c516a5-9ea0-4c8c-a480-ffbe4f6ed9e1" data-portal-id="49584662"></div>
+                <div class="formulario"  data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200">
+                    <script src="https://js.hsforms.net/forms/embed/49584662.js" defer></script>
+                    <div class="hs-form-frame" data-region="na1" data-form-id="b0c516a5-9ea0-4c8c-a480-ffbe4f6ed9e1" data-portal-id="49584662"></div>
+                </div>
 
                 <!-- div id="form-2" class="formulario" data-aos="fade-up"
                 data-aos-duration="1000"
